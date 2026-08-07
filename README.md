@@ -15,6 +15,21 @@ npm run dev
 npm run build
 ```
 
+## GitHub 社区数据同步
+
+首页成员、仓库、星标、Fork 与贡献者统计来自 GitHub API，生成文件为 `src/data/github-community.json`。
+
+```bash
+npm run sync:github
+```
+
+部署工作流每 6 小时自动同步一次，数据范围包括 `Spark-Relics` 组织公开仓库和创立者 `ad-naan` 的个人公开仓库（按 Star 取前 5）。公开数据无需额外配置；如需自动更新隐藏的组织成员，请在仓库 `Settings > Secrets and variables > Actions` 中添加：
+
+- Secret 名称：`COMMUNITY_GITHUB_TOKEN`
+- 推荐权限：组织 `Members: read`、目标仓库 `Metadata: read`
+
+Token 只在 GitHub Actions 同步阶段使用，不会被写入生成文件或发送到浏览器。同步脚本只收集公开仓库，不读取或输出任何私有仓库信息。
+
 ## 自动部署 (CI/CD)
 
 - 工作流文件：`.github/workflows/deploy.yml`

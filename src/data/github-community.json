@@ -1,0 +1,219 @@
+{
+  "generatedAt": "2026-08-07T15:46:31.421Z",
+  "organization": "Spark-Relics",
+  "personalRepoOwner": "ad-naan",
+  "founderLogin": "ad-naan",
+  "members": [
+    {
+      "login": "027xiguapi",
+      "name": "西瓜皮",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/31228055?v=4",
+      "profileUrl": "https://github.com/027xiguapi",
+      "bio": "web前端",
+      "company": "",
+      "location": "武汉",
+      "blog": "",
+      "followers": 88,
+      "following": 0,
+      "publicRepos": 49,
+      "joinedAt": "2017-08-22T00:56:32Z",
+      "role": "Member"
+    },
+    {
+      "login": "ad-naan",
+      "name": "adnaan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/163977012?v=4",
+      "profileUrl": "https://github.com/ad-naan",
+      "bio": "道虽迩，不行不至；事虽小，不为不成。",
+      "company": "@Adnify ",
+      "location": "China",
+      "blog": "https://gitee.com/adnaan",
+      "followers": 14,
+      "following": 10,
+      "publicRepos": 22,
+      "joinedAt": "2024-03-19T06:17:36Z",
+      "role": "Founder"
+    },
+    {
+      "login": "kerwin2046",
+      "name": "PaperPlane CZY",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/83115098?v=4",
+      "profileUrl": "https://github.com/kerwin2046",
+      "bio": "Just here for the vibes, man. Using Pop!_OS because I like my OS like my coffee: open and customizable. Stay hungry, stay curious.",
+      "company": "Baidu",
+      "location": "Vibing...",
+      "blog": "kerwin2046.github.io",
+      "followers": 24,
+      "following": 68,
+      "publicRepos": 113,
+      "joinedAt": "2021-04-24T08:50:04Z",
+      "role": "Member"
+    }
+  ],
+  "projects": [
+    {
+      "owner": "ad-naan",
+      "name": "Adnify",
+      "fullName": "ad-naan/Adnify",
+      "description": "Adnify—A lightweight, highly customizable AI Agent Editor.It delivers a superior experience beyond mainstream AI coding tools, featuring instant startup and lag-free performance.",
+      "url": "https://github.com/ad-naan/Adnify",
+      "homepage": "https://www.adnaan.one",
+      "private": false,
+      "language": "TypeScript",
+      "topics": [
+        "ai-tools",
+        "antigravity",
+        "claude"
+      ],
+      "stars": 258,
+      "forks": 47,
+      "openIssues": 3,
+      "updatedAt": "2026-08-03T23:17:45Z",
+      "image": "/assets/spark/generated/project-memory-v3.jpg"
+    },
+    {
+      "owner": "ad-naan",
+      "name": "nexus-account-manager",
+      "fullName": "ad-naan/nexus-account-manager",
+      "description": "A unified multi platform AI account management tool built on Tauri, React, and Rust.",
+      "url": "https://github.com/ad-naan/nexus-account-manager",
+      "homepage": null,
+      "private": false,
+      "language": "TypeScript",
+      "topics": [
+        "antigravity",
+        "cc-switch",
+        "claude-code-cli"
+      ],
+      "stars": 21,
+      "forks": 7,
+      "openIssues": 1,
+      "updatedAt": "2026-08-04T10:27:40Z",
+      "image": "/assets/spark/generated/project-agent-v3.jpg"
+    },
+    {
+      "owner": "ad-naan",
+      "name": "blog",
+      "fullName": "ad-naan/blog",
+      "description": "A React+NodeJs Full Stack “Turn Of The page\" AI Agent Blog",
+      "url": "https://github.com/ad-naan/blog",
+      "homepage": "https://www.adnaan.site",
+      "private": false,
+      "language": "TypeScript",
+      "topics": [
+        "ai-blog",
+        "langchain-js",
+        "nodejs"
+      ],
+      "stars": 12,
+      "forks": 1,
+      "openIssues": 0,
+      "updatedAt": "2026-06-21T11:27:19Z",
+      "image": "/assets/spark/generated/project-studio-v3.jpg"
+    },
+    {
+      "owner": "ad-naan",
+      "name": "Adnify-Cli",
+      "fullName": "ad-naan/Adnify-Cli",
+      "description": "Adnify-Cli is a next-gen CLI AI coding assistant. Blending Bun speed, Ink interaction and DDD architecture, it empowers efficient, intelligent terminal-first development.",
+      "url": "https://github.com/ad-naan/Adnify-Cli",
+      "homepage": "https://www.adnaan.one",
+      "private": false,
+      "language": "TypeScript",
+      "topics": [
+        "adnify",
+        "cc",
+        "claude-code"
+      ],
+      "stars": 10,
+      "forks": 5,
+      "openIssues": 0,
+      "updatedAt": "2026-08-05T03:51:08Z",
+      "image": "/assets/spark/generated/project-studio-v3.jpg"
+    },
+    {
+      "owner": "ad-naan",
+      "name": "adnify-website",
+      "fullName": "ad-naan/adnify-website",
+      "description": "adnify官网——100%由adnify打造",
+      "url": "https://github.com/ad-naan/adnify-website",
+      "homepage": "https://adnify.vercel.app",
+      "private": false,
+      "language": "TypeScript",
+      "topics": [
+        "adnify",
+        "official-website",
+        "website"
+      ],
+      "stars": 4,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-07-07T05:14:16Z",
+      "image": "/assets/spark/generated/project-memory-v3.jpg"
+    },
+    {
+      "owner": "Spark-Relics",
+      "name": "Spark-Relics.github.io",
+      "fullName": "Spark-Relics/Spark-Relics.github.io",
+      "description": "CSS project maintained by Spark-Relics.",
+      "url": "https://github.com/Spark-Relics/Spark-Relics.github.io",
+      "homepage": "https://spark-relics.github.io/",
+      "private": false,
+      "language": "CSS",
+      "topics": [],
+      "stars": 2,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-08-07T08:44:29Z",
+      "image": "/assets/spark/generated/project-memory-v3.jpg"
+    },
+    {
+      "owner": "Spark-Relics",
+      "name": ".github",
+      "fullName": "Spark-Relics/.github",
+      "description": "Community profile and organization-wide standards for Spark Relics.",
+      "url": "https://github.com/Spark-Relics/.github",
+      "homepage": null,
+      "private": false,
+      "language": "Code",
+      "topics": [
+        "community-health",
+        "open-source"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-08-04T15:23:09Z",
+      "image": "/assets/spark/generated/project-agent-v3.jpg"
+    },
+    {
+      "owner": "Spark-Relics",
+      "name": "Picoo",
+      "fullName": "Spark-Relics/Picoo",
+      "description": "AI creator community and reusable asset marketplace.",
+      "url": "https://github.com/Spark-Relics/Picoo",
+      "homepage": null,
+      "private": false,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "creator-community",
+        "marketplace"
+      ],
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-08-04T14:32:33Z",
+      "image": "/assets/spark/generated/project-forge-v3.jpg"
+    }
+  ],
+  "stats": {
+    "creators": 3,
+    "projects": 8,
+    "openSourceProjects": 8,
+    "privateProjects": 0,
+    "stars": 307,
+    "contributors": 12,
+    "locations": 3
+  }
+}

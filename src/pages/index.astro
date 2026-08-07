@@ -1,19 +1,28 @@
 ---
 import '../styles/global.css';
+import githubCommunity from '../data/github-community.json';
 
-const features = [
-  { image: '/assets/spark/generated/feature-open-v2.jpg', title: 'Open Source', copy: 'We build and share open-source projects for everyone.' },
-  { image: '/assets/spark/generated/feature-collaborate-v2.jpg', title: 'Collaborate', copy: 'We believe the best ideas come from working together.' },
-  { image: '/assets/spark/generated/feature-learn-v2.jpg', title: 'Learn & Grow', copy: 'We document, teach and explore new technologies.' },
-  { image: '/assets/spark/generated/feature-future-v2.jpg', title: 'Shape the Future', copy: 'Together, we create tools and ideas that matter.' },
+const formatMetric = (value) => new Intl.NumberFormat('en', {
+  notation: Number(value) >= 1000 ? 'compact' : 'standard',
+  maximumFractionDigits: 1,
+}).format(Number(value) || 0).toLowerCase();
+
+const creators = githubCommunity.members;
+
+const communityStats = [
+  { icon: 'people', value: formatMetric(githubCommunity.stats.creators), label: 'GitHub Members' },
+  { icon: 'code', value: formatMetric(githubCommunity.stats.projects), label: 'Repositories' },
+  { icon: 'star', value: formatMetric(githubCommunity.stats.stars), label: 'Stars' },
+  { icon: 'fork', value: formatMetric(githubCommunity.stats.contributors), label: 'Contributors' },
+  { icon: 'globe', value: formatMetric(githubCommunity.stats.locations), label: 'Locations' },
 ];
 
-const projects = [
-  { image: '/assets/spark/generated/project-agent-v3.jpg', title: 'Relic Agent', copy: 'A framework for building autonomous AI agents.', tags: ['Python', 'AI Agent'], stars: '2.1k', forks: '364' },
-  { image: '/assets/spark/generated/project-forge-v3.jpg', title: 'Spark Forge', copy: 'The ultimate toolkit for AI-driven development.', tags: ['TypeScript', 'Toolkit'], stars: '1.7k', forks: '289' },
-  { image: '/assets/spark/generated/project-memory-v3.jpg', title: 'Memory Relic', copy: 'A memory system for LLM applications.', tags: ['Python', 'Database'], stars: '1.3k', forks: '212' },
-  { image: '/assets/spark/generated/project-studio-v3.jpg', title: 'Relic Studio', copy: 'Create, visualize and share AI workflows easily.', tags: ['Web', 'Creative Tools'], stars: '982', forks: '156' },
-];
+const projects = githubCommunity.projects.map((project) => ({
+  ...project,
+  title: project.name,
+  copy: project.description,
+  tags: [project.language, project.private ? 'Private' : project.topics[0] || 'Open Source'],
+}));
 
 const heroStars = Array.from({ length: 30 }, (_, index) => ({
   x: (index * 37 + 11) % 100,
@@ -139,22 +148,45 @@ const heroEmbers = Array.from({ length: 18 }, (_, index) => ({
 
             <div class="creator-proof">
               <div class="avatar-stack" aria-hidden="true">
-                {[1, 2, 3, 4].map((avatar) => <img src={`/assets/spark/avatar-${avatar}.png`} alt="" />)}
+                {creators.slice(0, 4).map((creator) => <img src={creator.avatarUrl} alt="" />)}
               </div>
-              <span>Join 2,451+ creators worldwide</span>
+              <span>Meet {formatMetric(githubCommunity.stats.creators)} verified community members</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="feature-section shell" id="community" aria-label="Our values">
-        <div class="feature-grid">
-          {features.map((feature) => (
-            <article class="feature-card">
-              <div class="feature-image"><img src={feature.image} alt="" /></div>
-              <h2>{feature.title}</h2>
-              <p>{feature.copy}</p>
-            </article>
+      <section class="community-showcase shell" id="community" aria-labelledby="creators-title">
+        <div class="creator-panel" data-creator-strip>
+          <div class="creator-intro">
+            <h2 id="creators-title">Creators Spotlight<span aria-hidden="true">✦</span></h2>
+            <p>Discover the amazing people <br />bringing ideas to life.</p>
+            <a href="https://github.com/orgs/Spark-Relics/people">View all creators <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="creator-carousel carousel" data-carousel="creators">
+            <div class="creator-track carousel-track" tabindex="0" aria-label="Featured GitHub creators">
+              {creators.map((creator) => (
+                <button class:list={["creator-card", { "creator-card-founder": creator.role === 'Founder' }]} type="button" data-github-user={creator.login} data-fallback-name={creator.name} data-community-role={creator.role} aria-haspopup="dialog" aria-label={`View ${creator.name}'s GitHub profile card`}>
+                  <img src={creator.avatarUrl} alt={`${creator.name}'s GitHub avatar`} loading="lazy" />
+                  <strong>{creator.name}</strong>
+                  {creator.role === 'Founder' ? (
+                    <span class="creator-role"><b aria-hidden="true">✦</b> Founder</span>
+                  ) : (
+                    <span class="creator-metrics"><b title="Followers">●</b> {formatMetric(creator.followers)} <i title="Public repositories">◇</i> {formatMetric(creator.publicRepos)}</span>
+                  )}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div class="community-stats" aria-label="Community statistics">
+          {communityStats.map((stat) => (
+            <div class="stat-item">
+              <span class={`stat-icon stat-icon-${stat.icon}`} aria-hidden="true"></span>
+              <span><strong>{stat.value}</strong><small>{stat.label}</small></span>
+            </div>
           ))}
         </div>
       </section>
@@ -166,13 +198,15 @@ const heroEmbers = Array.from({ length: 18 }, (_, index) => ({
             <a href="https://github.com/Spark-Relics">View all projects <span aria-hidden="true">→</span></a>
           </div>
 
-          <div class="project-grid">
-            {projects.map((project) => (
-              <article class="project-card">
+          <div class="project-carousel carousel" data-carousel="projects">
+            <button class="carousel-button project-prev" type="button" data-carousel-prev aria-label="Previous projects">‹</button>
+            <div class="project-grid carousel-track" tabindex="0" aria-label="Featured open source projects">
+              {projects.map((project) => (
+              <article class:list={["project-card", { "project-card-private": project.private }]}>
                 <div class="project-main">
                   <div class="project-icon"><img src={project.image} alt="" /></div>
                   <div>
-                    <h3>{project.title}</h3>
+                    <h3>{project.url ? <a href={project.url} target="_blank" rel="noreferrer">{project.title}</a> : project.title}{project.private && <span class="private-mark">Private</span>}</h3>
                     <p>{project.copy}</p>
                   </div>
                 </div>
@@ -180,14 +214,17 @@ const heroEmbers = Array.from({ length: 18 }, (_, index) => ({
                   {project.tags.map((tag) => <span>{tag}</span>)}
                 </div>
                 <div class="project-stats">
-                  <span><b aria-hidden="true">★</b> {project.stars}</span>
+                  <span><b aria-hidden="true">★</b> {formatMetric(project.stars)}</span>
                   <span>
                     <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="6" cy="19" r="2"/><path d="M6 7v10M8 8c5 0 4-2 8-2M8 17c5 0 4-5 8-5v-4"/></svg>
-                    {project.forks}
+                    {formatMetric(project.forks)}
                   </span>
                 </div>
               </article>
-            ))}
+              ))}
+            </div>
+            <button class="carousel-button project-next" type="button" data-carousel-next aria-label="Next projects">›</button>
+            <div class="carousel-dots" data-carousel-dots aria-label="Project pages"></div>
           </div>
         </div>
       </section>
@@ -222,6 +259,43 @@ const heroEmbers = Array.from({ length: 18 }, (_, index) => ({
       <a class="button" href="https://github.com/Spark-Relics">Continue on GitHub <span aria-hidden="true">→</span></a>
     </dialog>
 
+    <dialog class="creator-dialog" aria-labelledby="creator-dialog-name">
+      <button class="profile-dialog-close icon-button" type="button" aria-label="Close creator profile">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+      </button>
+      <div class="profile-card-shell">
+        <aside class="profile-portrait">
+          <div class="profile-avatar-orbit">
+            <img data-profile-avatar src="/assets/spark/logo.png" alt="" />
+          </div>
+          <span class="profile-availability"><i aria-hidden="true"></i> Public GitHub profile</span>
+          <span class="profile-community-role" data-profile-role>Community Member</span>
+          <h2 id="creator-dialog-name" data-profile-name>Creator</h2>
+          <a data-profile-login href="https://github.com" target="_blank" rel="noreferrer">@github</a>
+        </aside>
+
+        <section class="profile-content" aria-live="polite">
+          <p class="dialog-kicker">Creator connection card</p>
+          <p class="profile-bio" data-profile-bio>Loading this creator's story...</p>
+          <div class="profile-meta">
+            <span data-profile-location hidden><b aria-hidden="true">⌖</b><span></span></span>
+            <span data-profile-company hidden><b aria-hidden="true">◈</b><span></span></span>
+            <span data-profile-since hidden><b aria-hidden="true">✦</b><span></span></span>
+          </div>
+          <div class="profile-stats" aria-label="GitHub statistics">
+            <span><strong data-profile-followers>—</strong><small>Followers</small></span>
+            <span><strong data-profile-following>—</strong><small>Following</small></span>
+            <span><strong data-profile-repos>—</strong><small>Repositories</small></span>
+          </div>
+          <p class="profile-error" data-profile-error hidden>Live GitHub data is temporarily unavailable. You can still open the public profile.</p>
+          <div class="profile-actions">
+            <a class="button" data-profile-github href="https://github.com" target="_blank" rel="noreferrer">Open GitHub <span aria-hidden="true">→</span></a>
+            <a class="profile-blog" data-profile-blog href="#" target="_blank" rel="noreferrer" hidden>Personal site ↗</a>
+          </div>
+        </section>
+      </div>
+    </dialog>
+
     <script>
       const dialog = document.querySelector('.join-dialog');
       document.querySelectorAll('.join-trigger').forEach((trigger) => {
@@ -231,6 +305,133 @@ const heroEmbers = Array.from({ length: 18 }, (_, index) => ({
       dialog?.addEventListener('click', (event) => {
         if (event.target === dialog) dialog.close();
       });
+
+      const creatorDialog = document.querySelector('.creator-dialog');
+      const profileCache = new Map();
+      let activeProfileRequest;
+
+      const profileElements = creatorDialog ? {
+        avatar: creatorDialog.querySelector('[data-profile-avatar]'),
+        name: creatorDialog.querySelector('[data-profile-name]'),
+        login: creatorDialog.querySelector('[data-profile-login]'),
+        bio: creatorDialog.querySelector('[data-profile-bio]'),
+        location: creatorDialog.querySelector('[data-profile-location]'),
+        company: creatorDialog.querySelector('[data-profile-company]'),
+        since: creatorDialog.querySelector('[data-profile-since]'),
+        followers: creatorDialog.querySelector('[data-profile-followers]'),
+        following: creatorDialog.querySelector('[data-profile-following]'),
+        repos: creatorDialog.querySelector('[data-profile-repos]'),
+        github: creatorDialog.querySelector('[data-profile-github]'),
+        blog: creatorDialog.querySelector('[data-profile-blog]'),
+        error: creatorDialog.querySelector('[data-profile-error]'),
+        role: creatorDialog.querySelector('[data-profile-role]'),
+      } : null;
+
+      const setText = (element, value) => {
+        if (element) element.textContent = String(value ?? '');
+      };
+
+      const setMeta = (element, value) => {
+        if (!(element instanceof HTMLElement)) return;
+        const content = element.querySelector('span');
+        setText(content, value);
+        element.hidden = !value;
+      };
+
+      const normalizeUrl = (value) => {
+        if (!value) return null;
+        try {
+          const candidate = /^https?:\/\//i.test(value) ? value : `https://${value}`;
+          const url = new URL(candidate);
+          return ['http:', 'https:'].includes(url.protocol) ? url.href : null;
+        } catch {
+          return null;
+        }
+      };
+
+      const renderProfile = (profile, fallbackName, communityRole = 'Member') => {
+        if (!profileElements) return;
+        const name = profile.name || fallbackName || profile.login;
+        const githubUrl = normalizeUrl(profile.html_url) || `https://github.com/${profile.login}`;
+        const blogUrl = normalizeUrl(profile.blog);
+        const joined = profile.created_at ? `Joined ${new Intl.DateTimeFormat('en', { month: 'short', year: 'numeric' }).format(new Date(profile.created_at))}` : '';
+
+        if (profileElements.avatar instanceof HTMLImageElement) {
+          profileElements.avatar.src = profile.avatar_url || `https://github.com/${profile.login}.png?size=320`;
+          profileElements.avatar.alt = `${name}'s GitHub avatar`;
+        }
+        setText(profileElements.name, name);
+        setText(profileElements.role, communityRole === 'Founder' ? '✦ Founder of Spark Relics' : 'Spark Relics Member');
+        setText(profileElements.login, `@${profile.login}`);
+        setText(profileElements.bio, profile.bio || 'Building, sharing, and leaving a spark in the open-source world.');
+        setText(profileElements.followers, Number(profile.followers ?? 0).toLocaleString());
+        setText(profileElements.following, Number(profile.following ?? 0).toLocaleString());
+        setText(profileElements.repos, Number(profile.public_repos ?? 0).toLocaleString());
+        setMeta(profileElements.location, profile.location);
+        setMeta(profileElements.company, profile.company);
+        setMeta(profileElements.since, joined);
+
+        if (profileElements.login instanceof HTMLAnchorElement) profileElements.login.href = githubUrl;
+        if (profileElements.github instanceof HTMLAnchorElement) profileElements.github.href = githubUrl;
+        if (profileElements.blog instanceof HTMLAnchorElement) {
+          profileElements.blog.hidden = !blogUrl;
+          if (blogUrl) profileElements.blog.href = blogUrl;
+        }
+      };
+
+      document.querySelectorAll('[data-github-user]').forEach((card) => {
+        card.addEventListener('click', async () => {
+          if (!(creatorDialog instanceof HTMLDialogElement) || !profileElements || !(card instanceof HTMLElement)) return;
+          const login = card.dataset.githubUser;
+          if (!login) return;
+          const fallbackName = card.dataset.fallbackName || login;
+          const communityRole = card.dataset.communityRole || 'Member';
+          const fallback = {
+            login,
+            name: fallbackName,
+            avatar_url: `https://github.com/${login}.png?size=320`,
+            html_url: `https://github.com/${login}`,
+            bio: 'Discovering this creator’s public GitHub story...',
+            followers: 0,
+            following: 0,
+            public_repos: 0,
+          };
+
+          renderProfile(fallback, fallbackName, communityRole);
+          profileElements.error?.toggleAttribute('hidden', true);
+          creatorDialog.classList.add('is-loading');
+          creatorDialog.showModal();
+
+          try {
+            activeProfileRequest?.abort();
+            activeProfileRequest = new AbortController();
+            const cached = profileCache.get(login);
+            const profile = cached || await fetch(`https://api.github.com/users/${encodeURIComponent(login)}`, {
+              signal: activeProfileRequest.signal,
+              headers: {
+                Accept: 'application/vnd.github+json',
+                'X-GitHub-Api-Version': '2022-11-28',
+              },
+            }).then((response) => {
+              if (!response.ok) throw new Error(`GitHub request failed: ${response.status}`);
+              return response.json();
+            });
+            profileCache.set(login, profile);
+            renderProfile(profile, fallbackName, communityRole);
+          } catch (error) {
+            if (error instanceof DOMException && error.name === 'AbortError') return;
+            profileElements.error?.removeAttribute('hidden');
+          } finally {
+            creatorDialog.classList.remove('is-loading');
+          }
+        });
+      });
+
+      document.querySelector('.profile-dialog-close')?.addEventListener('click', () => creatorDialog?.close());
+      creatorDialog?.addEventListener('click', (event) => {
+        if (event.target === creatorDialog) creatorDialog.close();
+      });
+      creatorDialog?.addEventListener('close', () => activeProfileRequest?.abort());
 
       const menu = document.querySelector('.menu-toggle');
       const links = document.querySelector('[data-nav-links]');
@@ -330,7 +531,7 @@ const heroEmbers = Array.from({ length: 18 }, (_, index) => ({
       }
 
       if (!reduceMotion.matches && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-        document.querySelectorAll('.feature-card, .project-card').forEach((card) => {
+        document.querySelectorAll('.creator-card, .project-card').forEach((card) => {
           if (!(card instanceof HTMLElement)) return;
           card.addEventListener('pointermove', (event) => {
             const bounds = card.getBoundingClientRect();
@@ -346,6 +547,164 @@ const heroEmbers = Array.from({ length: 18 }, (_, index) => ({
             card.style.setProperty('--card-ry', '0deg');
           });
         });
+      }
+
+      document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+        const track = carousel.querySelector('.carousel-track');
+        const prev = carousel.querySelector('[data-carousel-prev]');
+        const next = carousel.querySelector('[data-carousel-next]');
+        const dots = carousel.querySelector('[data-carousel-dots]');
+        if (!(track instanceof HTMLElement)) return;
+
+        const pageSize = () => Math.max(1, track.clientWidth * .92);
+        const pageCount = () => Math.max(1, Math.ceil(track.scrollWidth / pageSize()));
+        let dotButtons = [];
+
+        const renderDots = () => {
+          if (!(dots instanceof HTMLElement)) return;
+          dots.replaceChildren();
+          dotButtons = Array.from({ length: pageCount() }, (_, index) => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.setAttribute('aria-label', `Go to project page ${index + 1}`);
+            button.addEventListener('click', () => track.scrollTo({ left: index * pageSize(), behavior: 'smooth' }));
+            dots.append(button);
+            return button;
+          });
+        };
+
+        const update = () => {
+          const current = Math.round(track.scrollLeft / pageSize());
+          prev?.toggleAttribute('disabled', track.scrollLeft < 4);
+          next?.toggleAttribute('disabled', track.scrollLeft + track.clientWidth >= track.scrollWidth - 4);
+          dotButtons.forEach((dot, index) => dot.classList.toggle('active', index === current));
+        };
+
+        prev?.addEventListener('click', () => track.scrollBy({ left: -pageSize(), behavior: 'smooth' }));
+        next?.addEventListener('click', () => track.scrollBy({ left: pageSize(), behavior: 'smooth' }));
+        track.addEventListener('scroll', update, { passive: true });
+        track.addEventListener('keydown', (event) => {
+          if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+          event.preventDefault();
+          track.scrollBy({ left: event.key === 'ArrowLeft' ? -pageSize() : pageSize(), behavior: 'smooth' });
+        });
+        renderDots();
+        update();
+        new ResizeObserver(() => { renderDots(); update(); }).observe(track);
+      });
+
+      document.querySelectorAll('[data-github-user] img').forEach((image) => {
+        image.addEventListener('error', () => {
+          if (image instanceof HTMLImageElement) image.src = '/assets/spark/logo.png';
+        }, { once: true });
+      });
+
+      const creatorStrip = document.querySelector('[data-creator-strip]');
+      const creatorSection = document.querySelector('.community-showcase');
+      const creatorMarquee = creatorStrip?.querySelector('.creator-track');
+
+      if (creatorStrip instanceof HTMLElement && creatorSection instanceof HTMLElement && creatorMarquee instanceof HTMLElement) {
+        const originalItems = Array.from(creatorMarquee.children);
+        const marqueeStyle = getComputedStyle(creatorMarquee);
+        const marqueeGap = Number.parseFloat(marqueeStyle.columnGap || marqueeStyle.gap) || 0;
+        const originalItemsWidth = originalItems.reduce((total, item) => total + (item instanceof HTMLElement ? item.getBoundingClientRect().width : 0), 0);
+        const originalContentWidth = originalItemsWidth + marqueeGap * Math.max(0, originalItems.length - 1);
+        const loopWidth = originalItemsWidth + marqueeGap * originalItems.length;
+        originalItems.forEach((item) => {
+          const clone = item.cloneNode(true);
+          if (!(clone instanceof HTMLElement)) return;
+          clone.dataset.marqueeClone = '';
+          clone.setAttribute('aria-hidden', 'true');
+          clone.setAttribute('tabindex', '-1');
+          clone.style.pointerEvents = 'none';
+          clone.removeAttribute('data-github-user');
+          clone.querySelectorAll('[tabindex], a, button').forEach((child) => {
+            if (child instanceof HTMLElement) child.setAttribute('tabindex', '-1');
+          });
+          creatorMarquee.append(clone);
+        });
+
+        let marqueeFrame = 0;
+        let scrollFrame = 0;
+        let lastMarqueeTime = 0;
+        let marqueePaused = false;
+        let resumeTimer = 0;
+
+        const updateCreatorFillMode = () => {
+          const centered = originalContentWidth <= creatorMarquee.clientWidth - 4;
+          creatorMarquee.classList.toggle('is-centered', centered);
+          creatorStrip.classList.toggle('has-creator-overflow', !centered);
+          if (centered) creatorMarquee.scrollLeft = 0;
+          return centered;
+        };
+
+        const runMarquee = (time) => {
+          if (!creatorStrip.classList.contains('is-pinned')) return;
+          const elapsed = Math.min(40, time - (lastMarqueeTime || time));
+          lastMarqueeTime = time;
+          if (!marqueePaused && !reduceMotion.matches && !creatorMarquee.classList.contains('is-centered')) {
+            creatorMarquee.scrollLeft += elapsed * .036;
+            if (creatorMarquee.scrollLeft >= loopWidth) creatorMarquee.scrollLeft -= loopWidth;
+          }
+          marqueeFrame = requestAnimationFrame(runMarquee);
+        };
+
+        const startMarquee = () => {
+          if (marqueeFrame || reduceMotion.matches || creatorMarquee.classList.contains('is-centered')) return;
+          lastMarqueeTime = 0;
+          marqueeFrame = requestAnimationFrame(runMarquee);
+        };
+
+        const stopMarquee = () => {
+          cancelAnimationFrame(marqueeFrame);
+          marqueeFrame = 0;
+          lastMarqueeTime = 0;
+        };
+
+        const pauseMarquee = () => {
+          marqueePaused = true;
+          window.clearTimeout(resumeTimer);
+        };
+
+        const resumeMarquee = (delay = 350) => {
+          window.clearTimeout(resumeTimer);
+          resumeTimer = window.setTimeout(() => { marqueePaused = false; }, delay);
+        };
+
+        const updateCreatorScrollStage = () => {
+          scrollFrame = 0;
+          const stripRect = creatorStrip.getBoundingClientRect();
+          const sectionRect = creatorSection.getBoundingClientRect();
+          const stickyTop = 18;
+          const expansionStart = window.innerHeight * .82;
+          const progress = Math.max(0, Math.min(1, (expansionStart - stripRect.top) / Math.max(1, expansionStart - stickyTop)));
+          const width = 87.5 + progress * 12.5;
+          const radius = 22 - progress * 6;
+          creatorStrip.style.setProperty('--creator-panel-width', `${width.toFixed(3)}%`);
+          creatorStrip.style.setProperty('--creator-panel-radius', `${radius.toFixed(2)}px`);
+          const centered = updateCreatorFillMode();
+
+          const pinned = window.innerWidth > 760 && sectionRect.top <= stickyTop && sectionRect.bottom > creatorStrip.offsetHeight + stickyTop + 28;
+          creatorStrip.classList.toggle('is-pinned', pinned);
+          creatorSection.classList.toggle('has-pinned-strip', pinned);
+          if (pinned && !centered) startMarquee();
+          else stopMarquee();
+        };
+
+        const requestCreatorStageUpdate = () => {
+          if (!scrollFrame) scrollFrame = requestAnimationFrame(updateCreatorScrollStage);
+        };
+
+        creatorMarquee.addEventListener('pointerenter', pauseMarquee);
+        creatorMarquee.addEventListener('pointerleave', () => resumeMarquee());
+        creatorMarquee.addEventListener('focusin', pauseMarquee);
+        creatorMarquee.addEventListener('focusout', () => resumeMarquee());
+        creatorMarquee.addEventListener('touchstart', pauseMarquee, { passive: true });
+        creatorMarquee.addEventListener('touchend', () => resumeMarquee(1800), { passive: true });
+        creatorMarquee.addEventListener('wheel', () => { pauseMarquee(); resumeMarquee(1800); }, { passive: true });
+        window.addEventListener('scroll', requestCreatorStageUpdate, { passive: true });
+        window.addEventListener('resize', requestCreatorStageUpdate, { passive: true });
+        updateCreatorScrollStage();
       }
     </script>
   </body>

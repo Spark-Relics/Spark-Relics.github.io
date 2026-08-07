@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: "17 */6 * * *"
   workflow_dispatch:
 
 permissions:
@@ -35,6 +37,14 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Sync GitHub community data
+        run: npm run sync:github
+        env:
+          GITHUB_TOKEN: ${{ secrets.COMMUNITY_GITHUB_TOKEN || github.token }}
+          COMMUNITY_ORG: Spark-Relics
+          PERSONAL_REPO_OWNER: ad-naan
+          FOUNDER_LOGIN: ad-naan
 
       - name: Build site
         run: npm run build
