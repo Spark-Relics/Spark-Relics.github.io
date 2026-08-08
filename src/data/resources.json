@@ -1,0 +1,70 @@
+{
+  "brandAssets": [
+    {
+      "id": "wallpapers",
+      "icon": "image",
+      "tag": "Design Asset",
+      "url": "/assets/spark/generated/hero-v2.jpg",
+      "downloadable": true
+    },
+    {
+      "id": "logos",
+      "icon": "shield",
+      "tag": "Brand Kit",
+      "url": "/assets/spark/logo.png",
+      "downloadable": true
+    }
+  ],
+  "blueprints": [
+    {
+      "id": "sync_workflow",
+      "icon": "git-branch",
+      "tag": "Workflow",
+      "url": "https://github.com/Spark-Relics/Spark-Relics.github.io/blob/main/.github/workflows/deploy.yml",
+      "github": "Spark-Relics/Spark-Relics.github.io"
+    },
+    {
+      "id": "seo_geo",
+      "icon": "cpu",
+      "tag": "Astro Component",
+      "url": "https://github.com/Spark-Relics/Spark-Relics.github.io/blob/main/src/components/SeoHead.astro",
+      "github": "Spark-Relics/Spark-Relics.github.io"
+    }
+  ],
+  "relics": [
+    {
+      "id": "adnify",
+      "name": "Adnify",
+      "icon": "zap",
+      "tag": "AI Editor",
+      "url": "https://github.com/ad-naan/Adnify",
+      "github": "ad-naan/Adnify"
+    },
+    {
+      "id": "portal",
+      "name": "Spark Relics Portal",
+      "icon": "rocket",
+      "tag": "Web Portal",
+      "url": "https://github.com/Spark-Relics/Spark-Relics.github.io",
+      "github": "Spark-Relics/Spark-Relics.github.io"
+    }
+  ],
+  "guides": [
+    {
+      "id": "g1",
+      "number": "01",
+      "url": "https://github.com/Spark-Relics"
+    },
+    {
+      "id": "g2",
+      "number": "02",
+      "url": "https://docs.astro.build"
+    },
+    {
+      "id": "g3",
+      "number": "03",
+      "url": "https://docs.github.com/en/communities"
+    }
+  ],
+  "lastSynced": "2026-08-08T16:13:03.046Z"
+}

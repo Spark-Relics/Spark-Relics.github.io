@@ -52,7 +52,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(data): auto-sync latest GitHub community data [skip ci]"
-          file_pattern: "src/data/github-community.json"
+          file_pattern: "src/data/*.json"
 
       - name: Build site
         run: npm run build

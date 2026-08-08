@@ -6,6 +6,7 @@ const personalRepoOwner = process.env.PERSONAL_REPO_OWNER || 'ad-naan';
 const founderLogin = process.env.FOUNDER_LOGIN || 'ad-naan';
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '';
 const outputPath = resolve(process.cwd(), 'src/data/github-community.json');
+const resourcesPath = resolve(process.cwd(), 'src/data/resources.json');
 const apiVersion = process.env.GITHUB_API_VERSION || '2022-11-28';
 
 const headers = {
@@ -167,3 +168,32 @@ try {
 } catch (error) {
   if (!(await fallbackToExisting(error))) throw error;
 }
+
+// Sync GitHub stars for Spark Relics internal ecosystem resources
+try {
+  const resourcesRaw = await readFile(resourcesPath, 'utf8');
+  const resources = JSON.parse(resourcesRaw);
+  let updated = 0;
+
+  const allItems = [...(resources.relics || []), ...(resources.blueprints || [])];
+  for (const item of allItems) {
+    if (!item.github) continue;
+    try {
+      const repo = await request(`/repos/${item.github}`, { optional: true });
+      if (repo && typeof repo.stargazers_count === 'number') {
+        item.stars = repo.stargazers_count;
+        updated += 1;
+      }
+    } catch {
+      // Keep existing star count
+    }
+  }
+
+  resources.lastSynced = new Date().toISOString();
+  await writeFile(resourcesPath, `${JSON.stringify(resources, null, 2)}\n`, 'utf8');
+  console.log(`Synced GitHub stars for ${updated} Spark Relics internal resources.`);
+} catch (error) {
+  console.warn(`Resource sync skipped: ${error.message}`);
+}
+
+

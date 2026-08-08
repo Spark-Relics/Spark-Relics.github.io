@@ -16,6 +16,7 @@ const year = new Date().getFullYear();
 
 const homePath = getLocalizedPath(Astro.url, lang, '/');
 const aboutPath = getLocalizedPath(Astro.url, lang, '/about');
+const resourcesPath = getLocalizedPath(Astro.url, lang, '/resources');
 
 // Define multilingual quotes for creators to enable full left-right interaction
 const creatorVoices = [
@@ -111,7 +112,7 @@ const creatorVoices = [
           <a href={homePath}>{t('nav.home')}</a>
           <a href={`${homePath}#projects`}>{t('nav.projects')}</a>
           <a href={`${homePath}#community`}>{t('nav.community')}</a>
-          <a href={`${homePath}#resources`}>{t('nav.resources')}</a>
+          <a href={resourcesPath}>{t('nav.resources')}</a>
           <a class="active" href={aboutPath}>{t('nav.about')}</a>
         </div>
 

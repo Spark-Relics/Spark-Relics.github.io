@@ -51,6 +51,7 @@ const heroEmbers = Array.from({ length: 18 }, (_, index) => ({
 
 const homePath = getLocalizedPath(Astro.url, lang, '/');
 const aboutPath = getLocalizedPath(Astro.url, lang, '/about');
+const resourcesPath = getLocalizedPath(Astro.url, lang, '/resources');
 ---
 
 <!doctype html>
@@ -81,7 +82,7 @@ const aboutPath = getLocalizedPath(Astro.url, lang, '/about');
           <a class="active" href={homePath}>{t('nav.home')}</a>
           <a href="#projects">{t('nav.projects')}</a>
           <a href="#community">{t('nav.community')}</a>
-          <a href="#resources">{t('nav.resources')}</a>
+          <a href={resourcesPath}>{t('nav.resources')}</a>
           <a href={aboutPath}>{t('nav.about')}</a>
         </div>
 
