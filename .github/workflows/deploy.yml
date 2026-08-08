@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.COMMUNITY_GITHUB_TOKEN || github.token }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -45,6 +47,12 @@ jobs:
           COMMUNITY_ORG: Spark-Relics
           PERSONAL_REPO_OWNER: ad-naan
           FOUNDER_LOGIN: ad-naan
+
+      - name: Commit updated data back to repository
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(data): auto-sync latest GitHub community data [skip ci]"
+          file_pattern: "src/data/github-community.json"
 
       - name: Build site
         run: npm run build

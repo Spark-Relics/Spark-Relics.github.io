@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T15:46:31.421Z",
+  "generatedAt": "2026-08-08T15:57:30.298Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -29,7 +29,7 @@
       "location": "China",
       "blog": "https://gitee.com/adnaan",
       "followers": 14,
-      "following": 10,
+      "following": 12,
       "publicRepos": 22,
       "joinedAt": "2024-03-19T06:17:36Z",
       "role": "Founder"
@@ -48,6 +48,21 @@
       "publicRepos": 113,
       "joinedAt": "2021-04-24T08:50:04Z",
       "role": "Member"
+    },
+    {
+      "login": "sakurafall",
+      "name": "sakurafall",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/98212268?v=4",
+      "profileUrl": "https://github.com/sakurafall",
+      "bio": "",
+      "company": "",
+      "location": "",
+      "blog": "",
+      "followers": 1,
+      "following": 4,
+      "publicRepos": 9,
+      "joinedAt": "2022-01-22T10:08:53Z",
+      "role": "Member"
     }
   ],
   "projects": [
@@ -65,10 +80,10 @@
         "antigravity",
         "claude"
       ],
-      "stars": 258,
-      "forks": 47,
+      "stars": 259,
+      "forks": 46,
       "openIssues": 3,
-      "updatedAt": "2026-08-03T23:17:45Z",
+      "updatedAt": "2026-08-08T15:30:27Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -164,7 +179,7 @@
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-08-07T08:44:29Z",
+      "updatedAt": "2026-08-08T15:55:55Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -208,11 +223,11 @@
     }
   ],
   "stats": {
-    "creators": 3,
+    "creators": 4,
     "projects": 8,
     "openSourceProjects": 8,
     "privateProjects": 0,
-    "stars": 307,
+    "stars": 308,
     "contributors": 12,
     "locations": 3
   }

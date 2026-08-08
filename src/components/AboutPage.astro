@@ -12,12 +12,74 @@ interface Props {
 
 const { lang } = Astro.props;
 const t = useTranslations(lang);
-
-const founder = githubCommunity.members.find((member) => member.role === 'Founder') ?? githubCommunity.members[0];
 const year = new Date().getFullYear();
 
 const homePath = getLocalizedPath(Astro.url, lang, '/');
 const aboutPath = getLocalizedPath(Astro.url, lang, '/about');
+
+// Define multilingual quotes for creators to enable full left-right interaction
+const creatorVoices = [
+  {
+    id: 'ad-naan',
+    login: 'ad-naan',
+    name: 'adnaan',
+    roleTag: t('dialog.creator.role_founder'),
+    avatarUrl: 'https://avatars.githubusercontent.com/u/163977012?v=4',
+    profileUrl: 'https://github.com/ad-naan',
+    bio: '道虽迩，不行不至；事虽小，不为不成。',
+    quotes: {
+      en: '“I don’t know what AI will make of this industry. But before that day arrives, I want to leave something behind.”',
+      zh: '“我不知道 AI 会将这个行业带向何方。但在那一天到来之前，我想留下一些有生命力的东西。”',
+      'zh-tw': '“我不知道 AI 會將這個行業帶向何方。但在那一天到來之前，我想留下一些有生命力的東西。”',
+      ja: '「AIがこの業界をどこへ導くかは分からない。だがその日が来る前に、命あるものを何としても遺したい。」',
+      ko: '“AI가 이 산업을 어디로 이끌지 모르겠습니다. 하지만 그날이 오기 전에, 생명력 있는 무언가를 반드시 남기고 싶습니다.”',
+      es: '“No sé qué hará la IA con esta industria. Pero antes de que llegue ese día, quiero dejar algo con vida propia.”',
+      fr: '« Je ne sais pas ce que l’IA fera de cette industrie. Mais avant que ce jour ne vienne, je veux laisser quelque chose de vivant. »',
+      de: '„Ich weiß nicht, was KI aus dieser Branche macht. Aber bevor dieser Tag kommt, möchte ich etwas Lebendiges hinterlassen.“',
+    },
+    detail: t('about.origin.p1'),
+  },
+  {
+    id: 'kerwin2046',
+    login: 'kerwin2046',
+    name: 'PaperPlane CZY',
+    roleTag: '✧ Core Builder',
+    avatarUrl: 'https://avatars.githubusercontent.com/u/83115098?v=4',
+    profileUrl: 'https://github.com/kerwin2046',
+    bio: 'Just here for the vibes. Open and customizable.',
+    quotes: {
+      en: '“The world is changing at a speed we can barely keep up with. But before the future arrives, I want to build something real.”',
+      zh: '“世界正以我们难以追赶的速度巨变。但在未来正式降临前，我想打造出真实存在的价值。”',
+      'zh-tw': '“世界正以我們難以追趕的速度巨變。但在未來正式降臨前，我想打造出真實存在的價值。”',
+      ja: '「世界は追いつけないほどの速度で変わり続けている。だが未来が訪れる前に、私は確かな価値を刻みたい。」',
+      ko: '“세상은 우리가 따라잡기 힘든 속도로 변하고 있습니다. 하지만 미래가 도달하기 전에, 저는 실체 있는 가치를 만들고 싶습니다.”',
+      es: '“El mundo cambia a una velocidad insostenible. Pero antes de que llegue el futuro, quiero construir algo real.”',
+      fr: '« Le monde change à une vitesse vertigineuse. Mais avant que l’avenir n’arrive, je veux bâtir quelque chose de réel. »',
+      de: '„Die Welt verändert sich in rasender Geschwindigkeit. Aber bevor die Zukunft anbricht, möchte ich etwas Echtes erschaffen.“',
+    },
+    detail: t('about.origin.p2'),
+  },
+  {
+    id: '027xiguapi',
+    login: '027xiguapi',
+    name: '西瓜皮',
+    roleTag: '✦ Community Builder',
+    avatarUrl: 'https://avatars.githubusercontent.com/u/31228055?v=4',
+    profileUrl: 'https://github.com/027xiguapi',
+    bio: 'web前端 · 专注体验与细节',
+    quotes: {
+      en: '“Code is our brush, and open-source is our canvas. Every line carries the warmth of its creator.”',
+      zh: '“代码是我们的画笔，开源是我们的画布。每一行字符都传递着创作者的温度。”',
+      'zh-tw': '“程式碼是我們的畫筆，開源是我們的畫布。每一行字元都傳遞著創作者的溫度。”',
+      ja: '「コードは私たちの絵筆であり、オープンソースはキャンバス。すべての行に創作者の温もりが宿る。」',
+      ko: '“코드는 우리의 붓이고, 오픈소스는 우리의 화폭입니다. 모든 줄마다 창작자의 온기가 담겨 있습니다.”',
+      es: '“El código es nuestro pincel y el código abierto nuestro lienzo. Cada línea lleva el calor de su creador.”',
+      fr: '« Le code est notre pinceau, l’open source notre toile. Chaque ligne porte la chaleur de son auteur. »',
+      de: '„Code ist unser Pinsel, Open Source unsere Leinwand. Jede Zeile trägt die Wärme ihres Schöpfers.“',
+    },
+    detail: t('about.origin.p1'),
+  },
+];
 ---
 
 <!doctype html>
@@ -108,28 +170,88 @@ const aboutPath = getLocalizedPath(Astro.url, lang, '/about');
         <div class="scene-progress" aria-hidden="true"><i></i></div>
       </section>
 
-      <section class="origin-section shell" id="origin">
+      <!-- Origin Section with Interactive Creator Voices Carousel -->
+      <section class="origin-section shell" id="origin" data-voices-stage>
         <div class="origin-story" data-reveal>
-          <blockquote>
-            {t('about.origin.quote_1')}<br />
-            {t('about.origin.quote_2')}<strong>{t('about.origin.quote_3')}</strong>
-          </blockquote>
+          <div class="quote-container" data-quote-container>
+            {creatorVoices.map((voice, idx) => (
+              <blockquote
+                class:list={['voice-quote', { active: idx === 0 }]}
+                data-voice-quote={idx}
+                aria-hidden={idx === 0 ? 'false' : 'true'}
+              >
+                {voice.quotes[lang] || voice.quotes.en}
+              </blockquote>
+            ))}
+          </div>
           <div class="origin-body">
-            <p>{t('about.origin.p1')}</p>
+            <p data-voice-detail>{creatorVoices[0].detail}</p>
             <p>{t('about.origin.p2')}</p>
           </div>
         </div>
 
-        <a class="founder-card" href={founder.profileUrl} target="_blank" rel="noreferrer" data-reveal>
-          <div class="founder-glow" aria-hidden="true"></div>
-          <img src={founder.avatarUrl} alt={`${founder.name || founder.login}'s GitHub avatar`} />
-          <div>
-            <span class="founder-role">{t('about.origin.founder_role')}</span>
-            <h2>{founder.name || founder.login}</h2>
-            <p>{founder.bio || t('dialog.creator.bio_fallback')}</p>
+        <div class="creator-voice-widget" data-reveal>
+          <!-- Creator Selector Tabs -->
+          <div class="voice-tabs" aria-label="Creators list">
+            {creatorVoices.map((voice, idx) => (
+              <button
+                class:list={['voice-tab-btn', { active: idx === 0 }]}
+                type="button"
+                data-voice-target={idx}
+                aria-label={`Show quote by ${voice.name}`}
+              >
+                <img src={voice.avatarUrl} alt={voice.name} width="32" height="32" loading="lazy" />
+                <span class="tab-glow" aria-hidden="true"></span>
+              </button>
+            ))}
           </div>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" /></svg>
-        </a>
+
+          <!-- Featured Creator Card -->
+          <div class="voice-card-wrapper">
+            {creatorVoices.map((voice, idx) => (
+              <div
+                class:list={['voice-creator-card', { active: idx === 0 }]}
+                data-voice-card={idx}
+              >
+                <div class="card-ambient-light" aria-hidden="true"></div>
+                <div class="card-avatar-box">
+                  <img src={voice.avatarUrl} alt={`${voice.name}'s GitHub avatar`} />
+                  <span class="avatar-orbit" aria-hidden="true"></span>
+                </div>
+                <div class="card-content">
+                  <span class="founder-role">{voice.roleTag}</span>
+                  <h2>{voice.name}</h2>
+                  <p>{voice.bio}</p>
+                  <a
+                    class="card-github-link"
+                    href={voice.profileUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`Visit ${voice.name}'s profile on GitHub`}
+                  >
+                    <span>Visit GitHub</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" /></svg>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <!-- Carousel Nav Controls -->
+          <div class="voice-controls">
+            <button class="voice-nav-btn prev" type="button" data-voice-prev aria-label="Previous creator">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <div class="voice-dots">
+              {creatorVoices.map((_, idx) => (
+                <span class:list={['voice-dot', { active: idx === 0 }]} data-voice-dot={idx}></span>
+              ))}
+            </div>
+            <button class="voice-nav-btn next" type="button" data-voice-next aria-label="Next creator">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
       </section>
 
       <section class="manifesto-section">
@@ -218,8 +340,81 @@ const aboutPath = getLocalizedPath(Astro.url, lang, '/about');
       }), { threshold: .16 });
       revealItems.forEach((item) => observer.observe(item));
 
+      // Creator Voices Interactive Carousel Script
+      const stage = document.querySelector('[data-voices-stage]');
+      if (stage) {
+        const quotes = stage.querySelectorAll('[data-voice-quote]');
+        const cards = stage.querySelectorAll('[data-voice-card]');
+        const tabs = stage.querySelectorAll('[data-voice-target]');
+        const dots = stage.querySelectorAll('[data-voice-dot]');
+        const prevBtn = stage.querySelector('[data-voice-prev]');
+        const nextBtn = stage.querySelector('[data-voice-next]');
+
+        let currentIndex = 0;
+        const total = quotes.length;
+        let autoPlayTimer = null;
+
+        const updateVoice = (newIndex) => {
+          currentIndex = (newIndex + total) % total;
+
+          quotes.forEach((q, i) => {
+            const active = i === currentIndex;
+            q.classList.toggle('active', active);
+            q.setAttribute('aria-hidden', String(!active));
+          });
+
+          cards.forEach((c, i) => {
+            c.classList.toggle('active', i === currentIndex);
+          });
+
+          tabs.forEach((t, i) => {
+            t.classList.toggle('active', i === currentIndex);
+          });
+
+          dots.forEach((d, i) => {
+            d.classList.toggle('active', i === currentIndex);
+          });
+        };
+
+        tabs.forEach((tab) => {
+          tab.addEventListener('click', () => {
+            const index = Number(tab.getAttribute('data-voice-target'));
+            updateVoice(index);
+            restartAutoPlay();
+          });
+        });
+
+        prevBtn?.addEventListener('click', () => {
+          updateVoice(currentIndex - 1);
+          restartAutoPlay();
+        });
+
+        nextBtn?.addEventListener('click', () => {
+          updateVoice(currentIndex + 1);
+          restartAutoPlay();
+        });
+
+        const startAutoPlay = () => {
+          autoPlayTimer = setInterval(() => updateVoice(currentIndex + 1), 6000);
+        };
+
+        const stopAutoPlay = () => {
+          if (autoPlayTimer) clearInterval(autoPlayTimer);
+        };
+
+        const restartAutoPlay = () => {
+          stopAutoPlay();
+          startAutoPlay();
+        };
+
+        stage.addEventListener('mouseenter', stopAutoPlay);
+        stage.addEventListener('mouseleave', startAutoPlay);
+
+        startAutoPlay();
+      }
+
       const hero = document.querySelector('.about-hero');
-      const stage = document.querySelector('[data-cinema-stage]');
+      const cinemaStage = document.querySelector('[data-cinema-stage]');
       const heroVideo = document.querySelector('[data-about-video]');
       const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
       if (heroVideo) {
@@ -232,7 +427,7 @@ const aboutPath = getLocalizedPath(Astro.url, lang, '/about');
           else heroVideo.addEventListener('loadeddata', showVideo, { once: true });
         }
       }
-      if (hero && stage && !reduceMotion) {
+      if (hero && cinemaStage && !reduceMotion) {
         hero.addEventListener('pointermove', (event) => {
           const rect = hero.getBoundingClientRect();
           const x = (event.clientX - rect.left) / rect.width - .5;
