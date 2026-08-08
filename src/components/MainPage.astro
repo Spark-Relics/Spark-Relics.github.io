@@ -3,6 +3,7 @@ import '../styles/global.css';
 import githubCommunity from '../data/github-community.json';
 import { languages, type Language } from '../i18n/translations';
 import { useTranslations, getLocalizedPath } from '../i18n/utils';
+import SeoHead from './SeoHead.astro';
 
 interface Props {
   lang: Language;
@@ -57,9 +58,12 @@ const aboutPath = getLocalizedPath(Astro.url, lang, '/about');
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={t('hero.description_1') + ' ' + t('hero.description_2') + ' ' + t('hero.description_3')} />
     <link rel="icon" type="image/png" href="/assets/spark/logo.png" />
-    <title>Spark Relics</title>
+    <SeoHead
+      title={`Spark Relics · ${t('hero.eyebrow')}`}
+      description={`${t('hero.description_1')} ${t('hero.description_2')} ${t('hero.description_3')}`}
+      lang={lang}
+    />
   </head>
   <body>
     <header class="site-header">

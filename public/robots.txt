@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# GEO & AI Generation Search Crawlers Explicit Allow
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ByteSpider
+Allow: /
+
+Sitemap: https://spark-relics.github.io/sitemap-index.xml

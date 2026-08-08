@@ -1,0 +1,116 @@
+---
+import { languages, defaultLang, type Language } from '../i18n/translations';
+import { getLocalizedPath } from '../i18n/utils';
+
+interface Props {
+  title: string;
+  description: string;
+  lang: Language;
+  image?: string;
+  type?: string;
+}
+
+const {
+  title,
+  description,
+  lang,
+  image = 'https://spark-relics.github.io/assets/spark/generated/hero-v2.jpg',
+  type = 'website',
+} = Astro.props;
+
+const siteUrl = 'https://spark-relics.github.io';
+const canonicalPath = getLocalizedPath(Astro.url, lang);
+const canonicalUrl = new URL(canonicalPath, siteUrl).href;
+
+const localeMap: Record<Language, string> = {
+  en: 'en_US',
+  zh: 'zh_CN',
+  'zh-tw': 'zh_TW',
+  ja: 'ja_JP',
+  ko: 'ko_KR',
+  es: 'es_ES',
+  fr: 'fr_FR',
+  de: 'de_DE',
+};
+
+const currentLocale = localeMap[lang] || 'en_US';
+
+const alternateLinks = Object.keys(languages).map((langCode) => {
+  const code = langCode as Language;
+  const path = getLocalizedPath(Astro.url, code);
+  return {
+    lang: code,
+    href: new URL(path, siteUrl).href,
+  };
+});
+
+const defaultPath = getLocalizedPath(Astro.url, defaultLang);
+const xDefaultUrl = new URL(defaultPath, siteUrl).href;
+
+// JSON-LD Schema.org Structured Data for GEO (Generative Engine Optimization)
+const schemaOrgJSONLD = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: 'Spark Relics',
+      url: siteUrl,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${siteUrl}/assets/spark/logo.png`,
+      },
+      sameAs: ['https://github.com/Spark-Relics'],
+      description: description,
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}/#website`,
+      url: siteUrl,
+      name: 'Spark Relics',
+      description: description,
+      publisher: {
+        '@id': `${siteUrl}/#organization`,
+      },
+      inLanguage: lang,
+    },
+  ],
+};
+---
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalUrl} />
+
+<!-- GEO & Hreflang Multi-language Alternate Links -->
+<link rel="alternate" hreflang="x-default" href={xDefaultUrl} />
+{alternateLinks.map((link) => (
+  <link rel="alternate" hreflang={link.lang} href={link.href} />
+))}
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+<!-- Open Graph / Facebook / Discord / WeChat -->
+<meta property="og:type" content={type} />
+<meta property="og:site_name" content="Spark Relics" />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={image} />
+<meta property="og:locale" content={currentLocale} />
+{Object.entries(localeMap)
+  .filter(([code]) => code !== lang)
+  .map(([, loc]) => <meta property="og:locale:alternate" content={loc} />)}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={canonicalUrl} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={image} />
+
+<!-- JSON-LD Structured Data for AI Crawlers & GEO -->
+<script type="application/ld+json" set:html={JSON.stringify(schemaOrgJSONLD)} />

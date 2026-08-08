@@ -4,6 +4,7 @@ import '../styles/about.css';
 import githubCommunity from '../data/github-community.json';
 import { languages, type Language } from '../i18n/translations';
 import { useTranslations, getLocalizedPath } from '../i18n/utils';
+import SeoHead from './SeoHead.astro';
 
 interface Props {
   lang: Language;
@@ -24,9 +25,13 @@ const aboutPath = getLocalizedPath(Astro.url, lang, '/about');
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={t('about.meta.description')} />
     <link rel="icon" type="image/png" href="/assets/spark/logo.png" />
-    <title>{t('about.meta.title')}</title>
+    <SeoHead
+      title={t('about.meta.title')}
+      description={t('about.meta.description')}
+      lang={lang}
+      image="https://spark-relics.github.io/assets/spark/generated/about-origin-v1.png"
+    />
   </head>
   <body class="about-page">
     <header class="site-header about-header">
