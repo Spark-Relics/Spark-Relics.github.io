@@ -21,14 +21,16 @@
       "icon": "git-branch",
       "tag": "Workflow",
       "url": "https://github.com/Spark-Relics/Spark-Relics.github.io/blob/main/.github/workflows/deploy.yml",
-      "github": "Spark-Relics/Spark-Relics.github.io"
+      "github": "Spark-Relics/Spark-Relics.github.io",
+      "stars": 2
     },
     {
       "id": "seo_geo",
       "icon": "cpu",
       "tag": "Astro Component",
       "url": "https://github.com/Spark-Relics/Spark-Relics.github.io/blob/main/src/components/SeoHead.astro",
-      "github": "Spark-Relics/Spark-Relics.github.io"
+      "github": "Spark-Relics/Spark-Relics.github.io",
+      "stars": 2
     }
   ],
   "relics": [
@@ -38,7 +40,8 @@
       "icon": "zap",
       "tag": "AI Editor",
       "url": "https://github.com/ad-naan/Adnify",
-      "github": "ad-naan/Adnify"
+      "github": "ad-naan/Adnify",
+      "stars": 259
     },
     {
       "id": "portal",
@@ -46,7 +49,8 @@
       "icon": "rocket",
       "tag": "Web Portal",
       "url": "https://github.com/Spark-Relics/Spark-Relics.github.io",
-      "github": "Spark-Relics/Spark-Relics.github.io"
+      "github": "Spark-Relics/Spark-Relics.github.io",
+      "stars": 2
     }
   ],
   "guides": [
@@ -66,5 +70,5 @@
       "url": "https://docs.github.com/en/communities"
     }
   ],
-  "lastSynced": "2026-08-08T16:13:03.046Z"
+  "lastSynced": "2026-08-08T16:18:36.211Z"
 }

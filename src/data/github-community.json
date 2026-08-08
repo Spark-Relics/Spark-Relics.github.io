@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T16:05:13.625Z",
+  "generatedAt": "2026-08-08T16:18:35.473Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -170,16 +170,16 @@
       "owner": "Spark-Relics",
       "name": "Spark-Relics.github.io",
       "fullName": "Spark-Relics/Spark-Relics.github.io",
-      "description": "CSS project maintained by Spark-Relics.",
+      "description": "Astro project maintained by Spark-Relics.",
       "url": "https://github.com/Spark-Relics/Spark-Relics.github.io",
       "homepage": "https://spark-relics.github.io/",
       "private": false,
-      "language": "CSS",
+      "language": "Astro",
       "topics": [],
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-08-08T15:59:48Z",
+      "updatedAt": "2026-08-08T16:18:25Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
