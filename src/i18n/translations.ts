@@ -50,6 +50,11 @@ export const ui: Record<Language, Record<string, string>> = {
     'projects.tag_private': 'Private',
     'projects.tag_opensource': 'Open Source',
 
+    'portfolio.title': 'Selected Portfolios',
+    'portfolio.description': 'A closer look at finished products and live experiments created by our community.',
+    'portfolio.view_work': 'View work',
+    'portfolio.view_source': 'View source',
+
     // CTA Section
     'cta.title': 'Be Part of Something Meaningful',
     'cta.description_1': 'Whether you code, design, write, or dream – your spark can',
@@ -59,8 +64,8 @@ export const ui: Record<Language, Record<string, string>> = {
     // Dialogs
     'dialog.join.kicker': 'Find your spark',
     'dialog.join.title': 'Join the community',
-    'dialog.join.description': 'Meet creators, share what you are building, and help shape the next relic.',
-    'dialog.join.button': 'Continue on GitHub',
+    'dialog.join.description': 'Want to join? Email spark-relics@adnaan.one with a short introduction, your portfolio or representative work, and the kind of projects you would like to explore.',
+    'dialog.join.button': 'Send an email',
 
     'dialog.creator.kicker': 'Creator connection card',
     'dialog.creator.loading': "Loading this creator's story...",
@@ -183,6 +188,11 @@ export const ui: Record<Language, Record<string, string>> = {
     'projects.tag_private': '私有/内部',
     'projects.tag_opensource': '开源项目',
 
+    'portfolio.title': '作品集展示',
+    'portfolio.description': '深入了解社区创作者已经完成并上线的产品、网站与实验性作品。',
+    'portfolio.view_work': '查看作品',
+    'portfolio.view_source': '查看源代码',
+
     'cta.title': '参与具有持久价值的创造',
     'cta.description_1': '无论你是写代码、做设计、撰写文字还是孕育梦想——',
     'cta.description_2': '你的火花都能成为点亮未来的遗迹。',
@@ -190,8 +200,8 @@ export const ui: Record<Language, Record<string, string>> = {
 
     'dialog.join.kicker': '点亮你的火花',
     'dialog.join.title': '加入 Spark Relics 社区',
-    'dialog.join.description': '结识优秀创作者，分享你的作品，共同打造下一个具有影响力的项目。',
-    'dialog.join.button': '前往 GitHub 参与',
+    'dialog.join.description': '如果想加入请联系 spark-relics@adnaan.one。来信可以附上简单自我介绍、作品集或代表作品，以及你希望参与的方向。',
+    'dialog.join.button': '发送邮件',
 
     'dialog.creator.kicker': '社区创作者档案卡',
     'dialog.creator.loading': '正在加载创作者的故事...',
@@ -312,6 +322,11 @@ export const ui: Record<Language, Record<string, string>> = {
     'projects.tag_private': '私有/內部',
     'projects.tag_opensource': '開源專案',
 
+    'portfolio.title': '作品集展示',
+    'portfolio.description': '深入了解社群創作者已經完成並上線的產品、網站與實驗作品。',
+    'portfolio.view_work': '查看作品',
+    'portfolio.view_source': '查看原始碼',
+
     'cta.title': '參與具有持久價值的創造',
     'cta.description_1': '無論你是寫程式、做設計、撰寫文字還是孕育夢想——',
     'cta.description_2': '你的火花都能成為點亮未來的遺跡。',
@@ -319,8 +334,8 @@ export const ui: Record<Language, Record<string, string>> = {
 
     'dialog.join.kicker': '點亮你的火花',
     'dialog.join.title': '加入 Spark Relics 社區',
-    'dialog.join.description': '結識優秀創作者，分享你的作品，共同打造下一個具有影響力的專案。',
-    'dialog.join.button': '前往 GitHub 參與',
+    'dialog.join.description': '如果想加入，請聯絡 spark-relics@adnaan.one。來信可附上簡短自我介紹、作品集或代表作品，以及你希望參與的方向。',
+    'dialog.join.button': '傳送郵件',
 
     'dialog.creator.kicker': '社區創作者檔案卡',
     'dialog.creator.loading': '正在載入創作者的故事...',
@@ -441,6 +456,11 @@ export const ui: Record<Language, Record<string, string>> = {
     'projects.tag_private': '非公開/内部',
     'projects.tag_opensource': 'オープンソース',
 
+    'portfolio.title': 'ポートフォリオ',
+    'portfolio.description': 'コミュニティのクリエイターが完成・公開したプロダクト、サイト、実験的な作品をご紹介します。',
+    'portfolio.view_work': '作品を見る',
+    'portfolio.view_source': 'ソースを見る',
+
     'cta.title': '意味ある創造の物語へ',
     'cta.description_1': 'コードを書き、デザインし、言葉を紡ぎ、夢を見る——',
     'cta.description_2': 'あなたの灯火は、世界を照らす遺跡となる。',
@@ -448,8 +468,8 @@ export const ui: Record<Language, Record<string, string>> = {
 
     'dialog.join.kicker': 'あなたの火花を見つけよう',
     'dialog.join.title': 'Spark Relics コミュニティへ',
-    'dialog.join.description': 'クリエイターと出会い、作品を共有し、次なる時代の遺跡を共に創り上げよう。',
-    'dialog.join.button': 'GitHub で参加する',
+    'dialog.join.description': '参加をご希望の方は spark-relics@adnaan.one までご連絡ください。簡単な自己紹介、ポートフォリオや代表作、興味のある活動分野をお送りください。',
+    'dialog.join.button': 'メールを送る',
 
     'dialog.creator.kicker': 'クリエイター・カード',
     'dialog.creator.loading': 'ストーリーを読み込んでいます...',
@@ -570,6 +590,11 @@ export const ui: Record<Language, Record<string, string>> = {
     'projects.tag_private': '비공개/내부',
     'projects.tag_opensource': '오픈소스',
 
+    'portfolio.title': '포트폴리오 쇼케이스',
+    'portfolio.description': '커뮤니티 크리에이터가 완성하고 공개한 제품, 웹사이트와 실험적인 작업을 소개합니다.',
+    'portfolio.view_work': '작품 보기',
+    'portfolio.view_source': '소스 보기',
+
     'cta.title': '가치 있는 창작의 여정에 함께하세요',
     'cta.description_1': '코드를 작성하든, 디자인을 하든, 글을 쓰든 –',
     'cta.description_2': '당신의 불꽃은 세상을 밝히는 유적이 될 수 있습니다.',
@@ -577,8 +602,8 @@ export const ui: Record<Language, Record<string, string>> = {
 
     'dialog.join.kicker': '당신의 불꽃을 찾아보세요',
     'dialog.join.title': 'Spark Relics 커뮤니티 참여',
-    'dialog.join.description': '크리에이터들과 소통하고, 프로젝트를 공유하며, 다음 유적을 함께 만들어가세요.',
-    'dialog.join.button': 'GitHub에서 계속하기',
+    'dialog.join.description': '참여하려면 spark-relics@adnaan.one으로 연락해 주세요. 간단한 소개, 포트폴리오나 대표 작업, 참여하고 싶은 분야를 함께 보내 주세요.',
+    'dialog.join.button': '이메일 보내기',
 
     'dialog.creator.kicker': '크리에이터 카드',
     'dialog.creator.loading': '크리에이터 이야기를 불러오는 중...',
@@ -699,6 +724,11 @@ export const ui: Record<Language, Record<string, string>> = {
     'projects.tag_private': 'Privado',
     'projects.tag_opensource': 'Código Abierto',
 
+    'portfolio.title': 'Portafolios destacados',
+    'portfolio.description': 'Una selección de productos, sitios y experimentos terminados por creadores de la comunidad.',
+    'portfolio.view_work': 'Ver proyecto',
+    'portfolio.view_source': 'Ver código',
+
     'cta.title': 'Sé parte de algo trascendente',
     'cta.description_1': 'Ya sea que programes, diseñes, escribas o sueñes, tu chispa',
     'cta.description_2': 'puede convertirse en una reliquia que inspire al mundo.',
@@ -706,8 +736,8 @@ export const ui: Record<Language, Record<string, string>> = {
 
     'dialog.join.kicker': 'Encuentra tu chispa',
     'dialog.join.title': 'Únete a Spark Relics',
-    'dialog.join.description': 'Conoce creadores, comparte tus proyectos y ayuda a forjar la próxima reliquia.',
-    'dialog.join.button': 'Continuar en GitHub',
+    'dialog.join.description': '¿Quieres unirte? Escribe a spark-relics@adnaan.one e incluye una breve presentación, tu portafolio u obras destacadas y las áreas en las que te gustaría participar.',
+    'dialog.join.button': 'Enviar un correo',
 
     'dialog.creator.kicker': 'Ficha del creador',
     'dialog.creator.loading': 'Cargando la historia del creador...',
@@ -828,6 +858,11 @@ export const ui: Record<Language, Record<string, string>> = {
     'projects.tag_private': 'Privé',
     'projects.tag_opensource': 'Open Source',
 
+    'portfolio.title': 'Portfolios à découvrir',
+    'portfolio.description': 'Une sélection de produits, sites et expérimentations finalisés par les créateurs de la communauté.',
+    'portfolio.view_work': 'Voir le projet',
+    'portfolio.view_source': 'Voir le code',
+
     'cta.title': 'Prenez part à une œuvre porteuse de sens',
     'cta.description_1': 'Que vous codiez, conceviez, écriviez ou rêviez, votre étincelle',
     'cta.description_2': 'peut devenir une relique qui inspirera le monde.',
@@ -835,8 +870,8 @@ export const ui: Record<Language, Record<string, string>> = {
 
     'dialog.join.kicker': 'Trouvez votre étincelle',
     'dialog.join.title': 'Rejoindre Spark Relics',
-    'dialog.join.description': 'Rencontrez des créateurs, partagez vos travaux et façonnez la prochaine relique.',
-    'dialog.join.button': 'Continuer sur GitHub',
+    'dialog.join.description': 'Pour nous rejoindre, écrivez à spark-relics@adnaan.one avec une courte présentation, votre portfolio ou quelques réalisations, et les domaines auxquels vous souhaitez contribuer.',
+    'dialog.join.button': 'Envoyer un e-mail',
 
     'dialog.creator.kicker': 'Fiche créateur',
     'dialog.creator.loading': 'Chargement de l’histoire du créateur...',
@@ -957,6 +992,11 @@ export const ui: Record<Language, Record<string, string>> = {
     'projects.tag_private': 'Privat',
     'projects.tag_opensource': 'Open Source',
 
+    'portfolio.title': 'Ausgewählte Portfolios',
+    'portfolio.description': 'Einblicke in fertige Produkte, Websites und Experimente aus unserer Community.',
+    'portfolio.view_work': 'Projekt ansehen',
+    'portfolio.view_source': 'Quellcode ansehen',
+
     'cta.title': 'Werde Teil von etwas Bedeutendem',
     'cta.description_1': 'Egal ob du codest, gestaltest, schreibst oder träumst – dein Funke',
     'cta.description_2': 'kann zu einem Relikt werden, das die Welt inspiriert.',
@@ -964,8 +1004,8 @@ export const ui: Record<Language, Record<string, string>> = {
 
     'dialog.join.kicker': 'Finde deinen Funken',
     'dialog.join.title': 'Tritt Spark Relics bei',
-    'dialog.join.description': 'Triff Schöpfer, teile deine Arbeit und forme das nächste Relikt.',
-    'dialog.join.button': 'Weiter auf GitHub',
+    'dialog.join.description': 'Du möchtest mitmachen? Schreib an spark-relics@adnaan.one und sende eine kurze Vorstellung, dein Portfolio oder ausgewählte Arbeiten sowie deine gewünschten Themenfelder mit.',
+    'dialog.join.button': 'E-Mail senden',
 
     'dialog.creator.kicker': 'Schöpfer-Profilkarte',
     'dialog.creator.loading': 'Geschichte des Schöpfers wird geladen...',

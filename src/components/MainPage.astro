@@ -34,6 +34,11 @@ const projects = githubCommunity.projects.map((project) => ({
   tags: [project.language, project.private ? t('projects.tag_private') : (project.topics[0] || t('projects.tag_opensource'))],
 }));
 
+const portfolioProjects = projects
+  .filter((project) => project.homepage)
+  .filter((project, index, collection) => collection.findIndex((candidate) => candidate.homepage === project.homepage) === index)
+  .slice(0, 3);
+
 const heroStars = Array.from({ length: 30 }, (_, index) => ({
   x: (index * 37 + 11) % 100,
   y: (index * 53 + 7) % 82,
@@ -264,6 +269,35 @@ const resourcesPath = getLocalizedPath(Astro.url, lang, '/resources');
         </div>
       </section>
 
+      {portfolioProjects.length > 0 && (
+        <section class="portfolio-section shell" id="portfolio" aria-labelledby="portfolio-title">
+          <div class="section-heading portfolio-heading">
+            <div>
+              <h2 id="portfolio-title">{t('portfolio.title')}<span aria-hidden="true">✦</span></h2>
+              <p>{t('portfolio.description')}</p>
+            </div>
+          </div>
+          <div class="portfolio-grid">
+            {portfolioProjects.map((project) => (
+              <article class="portfolio-card">
+                <img src={project.image} alt="" loading="lazy" />
+                <div class="portfolio-card-content">
+                  <div class="tags">
+                    {project.tags.map((tag) => <span>{tag}</span>)}
+                  </div>
+                  <h3>{project.title}</h3>
+                  <p>{project.copy}</p>
+                  <div class="portfolio-actions">
+                    <a class="button button-small" href={project.homepage} target="_blank" rel="noreferrer">{t('portfolio.view_work')} <span aria-hidden="true">↗</span></a>
+                    {project.url && <a href={project.url} target="_blank" rel="noreferrer">{t('portfolio.view_source')} <span aria-hidden="true">→</span></a>}
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
       <section class="cta shell" id="about">
         <div class="cta-panel">
           <img class="cta-backdrop" src="/assets/spark/generated/cta-v2.jpg" alt="" aria-hidden="true" />
@@ -291,7 +325,7 @@ const resourcesPath = getLocalizedPath(Astro.url, lang, '/resources');
       <p class="dialog-kicker">{t('dialog.join.kicker')}</p>
       <h2>{t('dialog.join.title')}</h2>
       <p>{t('dialog.join.description')}</p>
-      <a class="button" href="https://github.com/Spark-Relics" target="_blank" rel="noreferrer">{t('dialog.join.button')} <span aria-hidden="true">→</span></a>
+      <a class="button" href="mailto:spark-relics@adnaan.one?subject=Join%20Spark%20Relics">{t('dialog.join.button')} <span aria-hidden="true">→</span></a>
     </dialog>
 
     <dialog
