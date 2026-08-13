@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T07:51:55.344Z",
+  "generatedAt": "2026-08-13T13:45:55.447Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -29,7 +29,7 @@
       "location": "China",
       "blog": "https://gitee.com/adnaan",
       "followers": 14,
-      "following": 12,
+      "following": 13,
       "publicRepos": 22,
       "joinedAt": "2024-03-19T06:17:36Z",
       "role": "Founder"
@@ -173,7 +173,7 @@
       "stars": 10,
       "forks": 5,
       "openIssues": 0,
-      "updatedAt": "2026-08-13T04:22:19Z",
+      "updatedAt": "2026-08-13T13:22:21Z",
       "image": "/assets/spark/generated/project-studio-v3.jpg"
     },
     {
@@ -198,6 +198,26 @@
     },
     {
       "owner": "Spark-Relics",
+      "name": "Otter-PPT",
+      "fullName": "Spark-Relics/Otter-PPT",
+      "description": "Otter-PPT is a native editable PPT generation engine that constructs text, charts, shapes, and images directly into genuine Office elements, rather than assembling slides with images.",
+      "url": "https://github.com/Spark-Relics/Otter-PPT",
+      "homepage": null,
+      "private": false,
+      "language": "Go",
+      "topics": [
+        "agent",
+        "claude-code",
+        "ppt"
+      ],
+      "stars": 2,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-08-13T13:37:03Z",
+      "image": "/assets/spark/generated/project-memory-v3.jpg"
+    },
+    {
+      "owner": "Spark-Relics",
       "name": "Spark-Relics.github.io",
       "fullName": "Spark-Relics/Spark-Relics.github.io",
       "description": "Astro project maintained by Spark-Relics.",
@@ -209,7 +229,7 @@
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-08-13T02:46:13Z",
+      "updatedAt": "2026-08-13T07:52:31Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -254,10 +274,10 @@
   ],
   "stats": {
     "creators": 6,
-    "projects": 8,
-    "openSourceProjects": 8,
+    "projects": 9,
+    "openSourceProjects": 9,
     "privateProjects": 0,
-    "stars": 317,
+    "stars": 319,
     "contributors": 12,
     "locations": 4
   }
