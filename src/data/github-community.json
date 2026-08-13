@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T13:45:55.447Z",
+  "generatedAt": "2026-08-13T19:19:02.048Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -30,7 +30,7 @@
       "blog": "https://gitee.com/adnaan",
       "followers": 14,
       "following": 13,
-      "publicRepos": 22,
+      "publicRepos": 21,
       "joinedAt": "2024-03-19T06:17:36Z",
       "role": "Founder"
     },
@@ -44,8 +44,8 @@
       "location": "Vibing...",
       "blog": "kerwin2046.github.io",
       "followers": 24,
-      "following": 69,
-      "publicRepos": 114,
+      "following": 72,
+      "publicRepos": 115,
       "joinedAt": "2021-04-24T08:50:04Z",
       "role": "Member"
     },
@@ -173,7 +173,7 @@
       "stars": 10,
       "forks": 5,
       "openIssues": 0,
-      "updatedAt": "2026-08-13T13:22:21Z",
+      "updatedAt": "2026-08-13T14:13:00Z",
       "image": "/assets/spark/generated/project-studio-v3.jpg"
     },
     {
@@ -213,8 +213,28 @@
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-08-13T13:37:03Z",
+      "updatedAt": "2026-08-13T15:10:29Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
+    },
+    {
+      "owner": "Spark-Relics",
+      "name": "Moyu-Defense",
+      "fullName": "Spark-Relics/Moyu-Defense",
+      "description": "🌵 A satirical 3D tower-defense game where office plants battle KPIs, clients, and bosses—protect your cubicle and survive until clock-out!",
+      "url": "https://github.com/Spark-Relics/Moyu-Defense",
+      "homepage": null,
+      "private": false,
+      "language": "JavaScript",
+      "topics": [
+        "3d-game",
+        "browser-game",
+        "indie-game"
+      ],
+      "stars": 2,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-08-13T14:16:16Z",
+      "image": "/assets/spark/generated/project-agent-v3.jpg"
     },
     {
       "owner": "Spark-Relics",
@@ -229,7 +249,7 @@
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-08-13T07:52:31Z",
+      "updatedAt": "2026-08-13T13:47:50Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -274,10 +294,10 @@
   ],
   "stats": {
     "creators": 6,
-    "projects": 9,
-    "openSourceProjects": 9,
+    "projects": 10,
+    "openSourceProjects": 10,
     "privateProjects": 0,
-    "stars": 319,
+    "stars": 321,
     "contributors": 12,
     "locations": 4
   }
