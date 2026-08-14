@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T19:19:02.048Z",
+  "generatedAt": "2026-08-14T02:44:23.507Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -43,9 +43,9 @@
       "company": "Baidu",
       "location": "Vibing...",
       "blog": "kerwin2046.github.io",
-      "followers": 24,
+      "followers": 25,
       "following": 72,
-      "publicRepos": 115,
+      "publicRepos": 117,
       "joinedAt": "2021-04-24T08:50:04Z",
       "role": "Member"
     },
@@ -210,10 +210,26 @@
         "claude-code",
         "ppt"
       ],
+      "stars": 3,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-08-14T02:38:28Z",
+      "image": "/assets/spark/generated/project-memory-v3.jpg"
+    },
+    {
+      "owner": "Spark-Relics",
+      "name": "Spark-Relics.github.io",
+      "fullName": "Spark-Relics/Spark-Relics.github.io",
+      "description": "Astro project maintained by Spark-Relics.",
+      "url": "https://github.com/Spark-Relics/Spark-Relics.github.io",
+      "homepage": "https://spark-relics.github.io/",
+      "private": false,
+      "language": "Astro",
+      "topics": [],
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-08-13T15:10:29Z",
+      "updatedAt": "2026-08-13T19:19:11Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -235,22 +251,6 @@
       "openIssues": 0,
       "updatedAt": "2026-08-13T14:16:16Z",
       "image": "/assets/spark/generated/project-agent-v3.jpg"
-    },
-    {
-      "owner": "Spark-Relics",
-      "name": "Spark-Relics.github.io",
-      "fullName": "Spark-Relics/Spark-Relics.github.io",
-      "description": "Astro project maintained by Spark-Relics.",
-      "url": "https://github.com/Spark-Relics/Spark-Relics.github.io",
-      "homepage": "https://spark-relics.github.io/",
-      "private": false,
-      "language": "Astro",
-      "topics": [],
-      "stars": 2,
-      "forks": 0,
-      "openIssues": 0,
-      "updatedAt": "2026-08-13T13:47:50Z",
-      "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
       "owner": "Spark-Relics",
@@ -297,7 +297,7 @@
     "projects": 10,
     "openSourceProjects": 10,
     "privateProjects": 0,
-    "stars": 321,
+    "stars": 322,
     "contributors": 12,
     "locations": 4
   }
