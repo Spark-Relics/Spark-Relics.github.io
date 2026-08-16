@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T18:46:42.190Z",
+  "generatedAt": "2026-08-16T01:56:57.325Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -218,6 +218,22 @@
     },
     {
       "owner": "Spark-Relics",
+      "name": "Spark-Relics.github.io",
+      "fullName": "Spark-Relics/Spark-Relics.github.io",
+      "description": "Astro project maintained by Spark-Relics.",
+      "url": "https://github.com/Spark-Relics/Spark-Relics.github.io",
+      "homepage": "https://spark-relics.github.io/",
+      "private": false,
+      "language": "Astro",
+      "topics": [],
+      "stars": 2,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-08-15T18:47:13Z",
+      "image": "/assets/spark/generated/project-memory-v3.jpg"
+    },
+    {
+      "owner": "Spark-Relics",
       "name": "Moyu-Defense",
       "fullName": "Spark-Relics/Moyu-Defense",
       "description": "🌵 A satirical 3D tower-defense game where office plants battle KPIs, clients, and bosses—protect your cubicle and survive until clock-out!",
@@ -235,22 +251,6 @@
       "openIssues": 0,
       "updatedAt": "2026-08-15T16:29:06Z",
       "image": "/assets/spark/generated/project-agent-v3.jpg"
-    },
-    {
-      "owner": "Spark-Relics",
-      "name": "Spark-Relics.github.io",
-      "fullName": "Spark-Relics/Spark-Relics.github.io",
-      "description": "Astro project maintained by Spark-Relics.",
-      "url": "https://github.com/Spark-Relics/Spark-Relics.github.io",
-      "homepage": "https://spark-relics.github.io/",
-      "private": false,
-      "language": "Astro",
-      "topics": [],
-      "stars": 2,
-      "forks": 0,
-      "openIssues": 0,
-      "updatedAt": "2026-08-15T12:58:01Z",
-      "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
       "owner": "Spark-Relics",
