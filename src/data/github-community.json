@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T07:15:18.273Z",
+  "generatedAt": "2026-08-17T13:04:26.717Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -44,7 +44,7 @@
       "location": "Vibing...",
       "blog": "kerwin2046.github.io",
       "followers": 24,
-      "following": 73,
+      "following": 74,
       "publicRepos": 120,
       "joinedAt": "2021-04-24T08:50:04Z",
       "role": "Member"
@@ -100,20 +100,20 @@
       "owner": "ad-naan",
       "name": "Adnify",
       "fullName": "ad-naan/Adnify",
-      "description": "Adnify—A lightweight, highly customizable AI Agent Editor.It delivers a superior experience beyond mainstream AI coding tools, featuring instant startup and lag-free performance.",
+      "description": "Your codebase just hired an AI teammate — it plans, edits, runs, and ships, with a little otter energy. 🦦",
       "url": "https://github.com/ad-naan/Adnify",
       "homepage": "https://www.adnaan.one",
       "private": false,
       "language": "TypeScript",
       "topics": [
-        "ai-tools",
-        "antigravity",
-        "claude"
+        "ai-agents",
+        "claude-code",
+        "codex"
       ],
       "stars": 269,
       "forks": 48,
-      "openIssues": 5,
-      "updatedAt": "2026-08-16T16:03:27Z",
+      "openIssues": 11,
+      "updatedAt": "2026-08-17T12:49:55Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -213,7 +213,7 @@
       "stars": 3,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-08-17T04:06:24Z",
+      "updatedAt": "2026-08-17T10:02:09Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -229,7 +229,7 @@
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-08-17T01:54:45Z",
+      "updatedAt": "2026-08-17T07:17:06Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
