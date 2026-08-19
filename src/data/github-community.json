@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T07:04:20.403Z",
+  "generatedAt": "2026-08-19T13:07:32.108Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -112,7 +112,7 @@
       ],
       "stars": 271,
       "forks": 48,
-      "openIssues": 4,
+      "openIssues": 6,
       "updatedAt": "2026-08-18T15:14:39Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
@@ -177,6 +177,26 @@
       "image": "/assets/spark/generated/project-studio-v3.jpg"
     },
     {
+      "owner": "Spark-Relics",
+      "name": "Otter-PPT",
+      "fullName": "Spark-Relics/Otter-PPT",
+      "description": "Otter-PPT is a native editable PPT generation engine that constructs text, charts, shapes, and images directly into genuine Office elements, rather than assembling slides with images.",
+      "url": "https://github.com/Spark-Relics/Otter-PPT",
+      "homepage": null,
+      "private": false,
+      "language": "Go",
+      "topics": [
+        "agent",
+        "claude-code",
+        "ppt"
+      ],
+      "stars": 4,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-08-19T08:04:53Z",
+      "image": "/assets/spark/generated/project-memory-v3.jpg"
+    },
+    {
       "owner": "ad-naan",
       "name": "adnify-website",
       "fullName": "ad-naan/adnify-website",
@@ -198,26 +218,6 @@
     },
     {
       "owner": "Spark-Relics",
-      "name": "Otter-PPT",
-      "fullName": "Spark-Relics/Otter-PPT",
-      "description": "Otter-PPT is a native editable PPT generation engine that constructs text, charts, shapes, and images directly into genuine Office elements, rather than assembling slides with images.",
-      "url": "https://github.com/Spark-Relics/Otter-PPT",
-      "homepage": null,
-      "private": false,
-      "language": "Go",
-      "topics": [
-        "agent",
-        "claude-code",
-        "ppt"
-      ],
-      "stars": 3,
-      "forks": 0,
-      "openIssues": 0,
-      "updatedAt": "2026-08-19T02:53:09Z",
-      "image": "/assets/spark/generated/project-memory-v3.jpg"
-    },
-    {
-      "owner": "Spark-Relics",
       "name": "Spark-Relics.github.io",
       "fullName": "Spark-Relics/Spark-Relics.github.io",
       "description": "Astro project maintained by Spark-Relics.",
@@ -229,7 +229,7 @@
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-08-19T01:52:07Z",
+      "updatedAt": "2026-08-19T07:05:52Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -297,7 +297,7 @@
     "projects": 10,
     "openSourceProjects": 10,
     "privateProjects": 0,
-    "stars": 325,
+    "stars": 326,
     "contributors": 12,
     "locations": 4
   }
