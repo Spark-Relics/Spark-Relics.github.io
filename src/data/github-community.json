@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:49:25.635Z",
+  "generatedAt": "2026-09-01T05:05:23.851Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -100,7 +100,7 @@
       "owner": "ad-naan",
       "name": "Adnify",
       "fullName": "ad-naan/Adnify",
-      "description": "Your codebase just hired an AI teammate — it plans, edits, runs, and ships, with a little otter energy. 🦦（一个很牛逼的agent ide）",
+      "description": "A local‑first AI Agent IDE that plans, edits, debugs and ships projects. Your clever otter‑flavored coding teammate.🦦（一个很牛逼的agent ide）",
       "url": "https://github.com/ad-naan/Adnify",
       "homepage": "https://www.adnaan.one",
       "private": false,
@@ -113,7 +113,7 @@
       "stars": 272,
       "forks": 47,
       "openIssues": 2,
-      "updatedAt": "2026-08-31T16:08:44Z",
+      "updatedAt": "2026-09-01T01:40:40Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -229,7 +229,7 @@
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-08-31T13:59:15Z",
+      "updatedAt": "2026-08-31T22:49:31Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
