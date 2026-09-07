@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T04:37:11.652Z",
+  "generatedAt": "2026-09-07T12:28:33.321Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -43,8 +43,8 @@
       "company": "Baidu",
       "location": "Vibing...",
       "blog": "kerwin2046.github.io",
-      "followers": 26,
-      "following": 74,
+      "followers": 27,
+      "following": 75,
       "publicRepos": 123,
       "joinedAt": "2021-04-24T08:50:04Z",
       "role": "Member"
@@ -100,7 +100,7 @@
       "owner": "ad-naan",
       "name": "Adnify",
       "fullName": "ad-naan/Adnify",
-      "description": "A local‑first AI Agent IDE that plans, edits, debugs and ships projects. Your clever otter‑flavored coding teammate.🦦（一个很牛逼的agent ide）",
+      "description": "A local‑first AI Agent IDE that plans, edits, debugs and ships projects. Your clever otter‑flavored coding teammate.🦦",
       "url": "https://github.com/ad-naan/Adnify",
       "homepage": "https://www.adnaan.one",
       "private": false,
@@ -110,10 +110,10 @@
         "claude-code",
         "codex"
       ],
-      "stars": 283,
+      "stars": 284,
       "forks": 47,
       "openIssues": 1,
-      "updatedAt": "2026-09-07T01:00:17Z",
+      "updatedAt": "2026-09-07T12:15:44Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -229,7 +229,7 @@
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-09-06T20:23:08Z",
+      "updatedAt": "2026-09-07T04:37:18Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -251,6 +251,22 @@
       "openIssues": 0,
       "updatedAt": "2026-08-15T16:29:06Z",
       "image": "/assets/spark/generated/project-agent-v3.jpg"
+    },
+    {
+      "owner": "Spark-Relics",
+      "name": "prism-chat",
+      "fullName": "Spark-Relics/prism-chat",
+      "description": "A channel-agnostic messaging hub SDK. Unify Telegram / WhatsApp / LINE / Email and more behind one message model.",
+      "url": "https://github.com/Spark-Relics/prism-chat",
+      "homepage": null,
+      "private": false,
+      "language": "TypeScript",
+      "topics": [],
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-09-07T07:09:43Z",
+      "image": "/assets/spark/generated/project-studio-v3.jpg"
     },
     {
       "owner": "Spark-Relics",
@@ -294,10 +310,10 @@
   ],
   "stats": {
     "creators": 6,
-    "projects": 10,
-    "openSourceProjects": 10,
+    "projects": 11,
+    "openSourceProjects": 11,
     "privateProjects": 0,
-    "stars": 339,
+    "stars": 341,
     "contributors": 12,
     "locations": 3
   }
