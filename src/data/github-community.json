@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T12:28:33.321Z",
+  "generatedAt": "2026-09-07T21:29:45.054Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -28,7 +28,7 @@
       "company": "@Spark-Relics",
       "location": "China",
       "blog": "https://gitee.com/adnaan",
-      "followers": 20,
+      "followers": 19,
       "following": 25,
       "publicRepos": 22,
       "joinedAt": "2024-03-19T06:17:36Z",
@@ -110,10 +110,10 @@
         "claude-code",
         "codex"
       ],
-      "stars": 284,
+      "stars": 285,
       "forks": 47,
       "openIssues": 1,
-      "updatedAt": "2026-09-07T12:15:44Z",
+      "updatedAt": "2026-09-07T17:47:42Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -229,7 +229,7 @@
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-09-07T04:37:18Z",
+      "updatedAt": "2026-09-07T12:29:34Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -313,7 +313,7 @@
     "projects": 11,
     "openSourceProjects": 11,
     "privateProjects": 0,
-    "stars": 341,
+    "stars": 342,
     "contributors": 12,
     "locations": 3
   }
