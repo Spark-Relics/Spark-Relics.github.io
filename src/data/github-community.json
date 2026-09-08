@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T21:29:45.054Z",
+  "generatedAt": "2026-09-08T04:32:32.802Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -29,7 +29,7 @@
       "location": "China",
       "blog": "https://gitee.com/adnaan",
       "followers": 19,
-      "following": 25,
+      "following": 22,
       "publicRepos": 22,
       "joinedAt": "2024-03-19T06:17:36Z",
       "role": "Founder"
@@ -113,7 +113,7 @@
       "stars": 285,
       "forks": 47,
       "openIssues": 1,
-      "updatedAt": "2026-09-07T17:47:42Z",
+      "updatedAt": "2026-09-08T01:26:23Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -193,7 +193,7 @@
       "stars": 5,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-08-31T08:34:20Z",
+      "updatedAt": "2026-09-08T04:15:24Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -218,22 +218,6 @@
     },
     {
       "owner": "Spark-Relics",
-      "name": "Spark-Relics.github.io",
-      "fullName": "Spark-Relics/Spark-Relics.github.io",
-      "description": "Astro project maintained by Spark-Relics.",
-      "url": "https://github.com/Spark-Relics/Spark-Relics.github.io",
-      "homepage": "https://spark-relics.github.io/",
-      "private": false,
-      "language": "Astro",
-      "topics": [],
-      "stars": 2,
-      "forks": 0,
-      "openIssues": 0,
-      "updatedAt": "2026-09-07T12:29:34Z",
-      "image": "/assets/spark/generated/project-memory-v3.jpg"
-    },
-    {
-      "owner": "Spark-Relics",
       "name": "Moyu-Defense",
       "fullName": "Spark-Relics/Moyu-Defense",
       "description": "🌵 A satirical 3D tower-defense game where office plants battle KPIs, clients, and bosses—protect your cubicle and survive until clock-out!",
@@ -246,11 +230,47 @@
         "browser-game",
         "indie-game"
       ],
+      "stars": 3,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-09-08T01:27:19Z",
+      "image": "/assets/spark/generated/project-agent-v3.jpg"
+    },
+    {
+      "owner": "Spark-Relics",
+      "name": "Spark-Relics.github.io",
+      "fullName": "Spark-Relics/Spark-Relics.github.io",
+      "description": "Astro project maintained by Spark-Relics.",
+      "url": "https://github.com/Spark-Relics/Spark-Relics.github.io",
+      "homepage": "https://spark-relics.github.io/",
+      "private": false,
+      "language": "Astro",
+      "topics": [],
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-08-15T16:29:06Z",
-      "image": "/assets/spark/generated/project-agent-v3.jpg"
+      "updatedAt": "2026-09-07T21:29:52Z",
+      "image": "/assets/spark/generated/project-memory-v3.jpg"
+    },
+    {
+      "owner": "Spark-Relics",
+      "name": "Picoo",
+      "fullName": "Spark-Relics/Picoo",
+      "description": "AI creator community and reusable asset marketplace.",
+      "url": "https://github.com/Spark-Relics/Picoo",
+      "homepage": null,
+      "private": false,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "creator-community",
+        "marketplace"
+      ],
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-09-08T03:09:48Z",
+      "image": "/assets/spark/generated/project-forge-v3.jpg"
     },
     {
       "owner": "Spark-Relics",
@@ -265,7 +285,7 @@
       "stars": 1,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-09-07T07:09:43Z",
+      "updatedAt": "2026-09-08T03:09:31Z",
       "image": "/assets/spark/generated/project-studio-v3.jpg"
     },
     {
@@ -286,26 +306,6 @@
       "openIssues": 0,
       "updatedAt": "2026-08-04T15:23:09Z",
       "image": "/assets/spark/generated/project-agent-v3.jpg"
-    },
-    {
-      "owner": "Spark-Relics",
-      "name": "Picoo",
-      "fullName": "Spark-Relics/Picoo",
-      "description": "AI creator community and reusable asset marketplace.",
-      "url": "https://github.com/Spark-Relics/Picoo",
-      "homepage": null,
-      "private": false,
-      "language": "TypeScript",
-      "topics": [
-        "ai",
-        "creator-community",
-        "marketplace"
-      ],
-      "stars": 0,
-      "forks": 0,
-      "openIssues": 0,
-      "updatedAt": "2026-08-04T14:32:33Z",
-      "image": "/assets/spark/generated/project-forge-v3.jpg"
     }
   ],
   "stats": {
@@ -313,7 +313,7 @@
     "projects": 11,
     "openSourceProjects": 11,
     "privateProjects": 0,
-    "stars": 342,
+    "stars": 344,
     "contributors": 12,
     "locations": 3
   }
