@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T11:20:06.494Z",
+  "generatedAt": "2026-09-09T16:37:00.461Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -15,7 +15,7 @@
       "blog": "",
       "followers": 88,
       "following": 0,
-      "publicRepos": 53,
+      "publicRepos": 54,
       "joinedAt": "2017-08-22T00:56:32Z",
       "role": "Member"
     },
@@ -30,7 +30,7 @@
       "blog": "https://gitee.com/adnaan",
       "followers": 19,
       "following": 22,
-      "publicRepos": 22,
+      "publicRepos": 21,
       "joinedAt": "2024-03-19T06:17:36Z",
       "role": "Founder"
     },
@@ -110,10 +110,10 @@
         "claude-code",
         "codex"
       ],
-      "stars": 287,
+      "stars": 288,
       "forks": 47,
       "openIssues": 1,
-      "updatedAt": "2026-09-09T04:21:13Z",
+      "updatedAt": "2026-09-09T15:47:58Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -233,8 +233,24 @@
       "stars": 3,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-09-08T01:27:19Z",
+      "updatedAt": "2026-09-09T15:07:06Z",
       "image": "/assets/spark/generated/project-agent-v3.jpg"
+    },
+    {
+      "owner": "Spark-Relics",
+      "name": "Mimesis",
+      "fullName": "Spark-Relics/Mimesis",
+      "description": "Mimesis — Browser Automation Runtime",
+      "url": "https://github.com/Spark-Relics/Mimesis",
+      "homepage": null,
+      "private": false,
+      "language": "TypeScript",
+      "topics": [],
+      "stars": 2,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-09-09T15:59:45Z",
+      "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
       "owner": "Spark-Relics",
@@ -249,7 +265,7 @@
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-09-09T04:39:38Z",
+      "updatedAt": "2026-09-09T11:20:46Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -310,10 +326,10 @@
   ],
   "stats": {
     "creators": 6,
-    "projects": 11,
-    "openSourceProjects": 11,
+    "projects": 12,
+    "openSourceProjects": 12,
     "privateProjects": 0,
-    "stars": 346,
+    "stars": 349,
     "contributors": 12,
     "locations": 3
   }
