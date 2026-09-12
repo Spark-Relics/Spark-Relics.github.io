@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T15:30:12.808Z",
+  "generatedAt": "2026-09-12T20:32:12.092Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -238,6 +238,22 @@
     },
     {
       "owner": "Spark-Relics",
+      "name": "Spark-Relics.github.io",
+      "fullName": "Spark-Relics/Spark-Relics.github.io",
+      "description": "Astro project maintained by Spark-Relics.",
+      "url": "https://github.com/Spark-Relics/Spark-Relics.github.io",
+      "homepage": "https://spark-relics.github.io/",
+      "private": false,
+      "language": "Astro",
+      "topics": [],
+      "stars": 2,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-09-12T15:30:18Z",
+      "image": "/assets/spark/generated/project-memory-v3.jpg"
+    },
+    {
+      "owner": "Spark-Relics",
       "name": "Mimesis",
       "fullName": "Spark-Relics/Mimesis",
       "description": "Mimesis — Browser Automation Runtime",
@@ -250,22 +266,6 @@
       "forks": 0,
       "openIssues": 0,
       "updatedAt": "2026-09-12T15:24:50Z",
-      "image": "/assets/spark/generated/project-memory-v3.jpg"
-    },
-    {
-      "owner": "Spark-Relics",
-      "name": "Spark-Relics.github.io",
-      "fullName": "Spark-Relics/Spark-Relics.github.io",
-      "description": "Astro project maintained by Spark-Relics.",
-      "url": "https://github.com/Spark-Relics/Spark-Relics.github.io",
-      "homepage": "https://spark-relics.github.io/",
-      "private": false,
-      "language": "Astro",
-      "topics": [],
-      "stars": 2,
-      "forks": 0,
-      "openIssues": 0,
-      "updatedAt": "2026-09-12T10:43:45Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
