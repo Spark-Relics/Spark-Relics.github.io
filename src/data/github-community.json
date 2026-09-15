@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T11:41:34.479Z",
+  "generatedAt": "2026-09-15T16:56:57.841Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -110,10 +110,10 @@
         "claude-code",
         "codex"
       ],
-      "stars": 296,
+      "stars": 297,
       "forks": 47,
       "openIssues": 3,
-      "updatedAt": "2026-09-15T03:05:26Z",
+      "updatedAt": "2026-09-15T14:43:13Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -238,6 +238,22 @@
     },
     {
       "owner": "Spark-Relics",
+      "name": "Spark-Relics.github.io",
+      "fullName": "Spark-Relics/Spark-Relics.github.io",
+      "description": "Astro project maintained by Spark-Relics.",
+      "url": "https://github.com/Spark-Relics/Spark-Relics.github.io",
+      "homepage": "https://spark-relics.github.io/",
+      "private": false,
+      "language": "Astro",
+      "topics": [],
+      "stars": 2,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-09-15T11:41:40Z",
+      "image": "/assets/spark/generated/project-memory-v3.jpg"
+    },
+    {
+      "owner": "Spark-Relics",
       "name": "Mimesis",
       "fullName": "Spark-Relics/Mimesis",
       "description": "Mimesis — Browser Automation Runtime",
@@ -250,22 +266,6 @@
       "forks": 0,
       "openIssues": 0,
       "updatedAt": "2026-09-15T10:11:45Z",
-      "image": "/assets/spark/generated/project-memory-v3.jpg"
-    },
-    {
-      "owner": "Spark-Relics",
-      "name": "Spark-Relics.github.io",
-      "fullName": "Spark-Relics/Spark-Relics.github.io",
-      "description": "Astro project maintained by Spark-Relics.",
-      "url": "https://github.com/Spark-Relics/Spark-Relics.github.io",
-      "homepage": "https://spark-relics.github.io/",
-      "private": false,
-      "language": "Astro",
-      "topics": [],
-      "stars": 2,
-      "forks": 0,
-      "openIssues": 0,
-      "updatedAt": "2026-09-15T04:51:52Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -329,7 +329,7 @@
     "projects": 12,
     "openSourceProjects": 12,
     "privateProjects": 0,
-    "stars": 357,
+    "stars": 358,
     "contributors": 12,
     "locations": 3
   }
