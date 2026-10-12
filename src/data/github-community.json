@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T05:53:19.380Z",
+  "generatedAt": "2026-10-12T15:18:58.785Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -110,10 +110,10 @@
         "claude-code",
         "codex"
       ],
-      "stars": 305,
+      "stars": 304,
       "forks": 51,
-      "openIssues": 4,
-      "updatedAt": "2026-10-09T15:00:01Z",
+      "openIssues": 3,
+      "updatedAt": "2026-10-12T13:53:05Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -177,6 +177,26 @@
       "image": "/assets/spark/generated/project-studio-v3.jpg"
     },
     {
+      "owner": "ad-naan",
+      "name": "adnify-website",
+      "fullName": "ad-naan/adnify-website",
+      "description": "adnify官网——100%由adnify打造",
+      "url": "https://github.com/ad-naan/adnify-website",
+      "homepage": "https://adnify.vercel.app",
+      "private": false,
+      "language": "TypeScript",
+      "topics": [
+        "adnify",
+        "official-website",
+        "website"
+      ],
+      "stars": 5,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-10-12T07:41:56Z",
+      "image": "/assets/spark/generated/project-memory-v3.jpg"
+    },
+    {
       "owner": "Spark-Relics",
       "name": "Otter-PPT",
       "fullName": "Spark-Relics/Otter-PPT",
@@ -194,26 +214,6 @@
       "forks": 0,
       "openIssues": 0,
       "updatedAt": "2026-09-09T02:42:51Z",
-      "image": "/assets/spark/generated/project-memory-v3.jpg"
-    },
-    {
-      "owner": "ad-naan",
-      "name": "adnify-website",
-      "fullName": "ad-naan/adnify-website",
-      "description": "adnify官网——100%由adnify打造",
-      "url": "https://github.com/ad-naan/adnify-website",
-      "homepage": "https://adnify.vercel.app",
-      "private": false,
-      "language": "TypeScript",
-      "topics": [
-        "adnify",
-        "official-website",
-        "website"
-      ],
-      "stars": 4,
-      "forks": 0,
-      "openIssues": 0,
-      "updatedAt": "2026-08-14T14:28:46Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -249,7 +249,7 @@
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-10-11T21:56:10Z",
+      "updatedAt": "2026-10-12T05:53:25Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
