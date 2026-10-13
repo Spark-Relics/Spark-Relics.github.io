@@ -5,21 +5,6 @@
   "founderLogin": "ad-naan",
   "members": [
     {
-      "login": "027xiguapi",
-      "name": "西瓜皮",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/31228055?v=4",
-      "profileUrl": "https://github.com/027xiguapi",
-      "bio": "web前端",
-      "company": "",
-      "location": "武汉",
-      "blog": "",
-      "followers": 88,
-      "following": 0,
-      "publicRepos": 54,
-      "joinedAt": "2017-08-22T00:56:32Z",
-      "role": "Member"
-    },
-    {
       "login": "ad-naan",
       "name": "adnaan",
       "avatarUrl": "https://avatars.githubusercontent.com/u/163977012?v=4",
@@ -33,6 +18,21 @@
       "publicRepos": 21,
       "joinedAt": "2024-03-19T06:17:36Z",
       "role": "Founder"
+    },
+    {
+      "login": "027xiguapi",
+      "name": "西瓜皮",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/31228055?v=4",
+      "profileUrl": "https://github.com/027xiguapi",
+      "bio": "web前端",
+      "company": "",
+      "location": "武汉",
+      "blog": "",
+      "followers": 88,
+      "following": 0,
+      "publicRepos": 54,
+      "joinedAt": "2017-08-22T00:56:32Z",
+      "role": "Member"
     },
     {
       "login": "kerwin2046",
@@ -62,21 +62,6 @@
       "following": 4,
       "publicRepos": 8,
       "joinedAt": "2022-01-22T10:08:53Z",
-      "role": "Member"
-    },
-    {
-      "login": "sikongyue",
-      "name": "sikongyue",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/311690904?v=4",
-      "profileUrl": "https://github.com/sikongyue",
-      "bio": "",
-      "company": "",
-      "location": "",
-      "blog": "",
-      "followers": 0,
-      "following": 0,
-      "publicRepos": 0,
-      "joinedAt": null,
       "role": "Member"
     },
     {
