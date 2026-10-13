@@ -1,24 +1,9 @@
 {
-  "generatedAt": "2026-10-13T00:37:33.128Z",
+  "generatedAt": "2026-10-13T13:20:40.906Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
   "members": [
-    {
-      "login": "ad-naan",
-      "name": "adnaan",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/163977012?v=4",
-      "profileUrl": "https://github.com/ad-naan",
-      "bio": "道虽迩，不行不至；事虽小，不为不成。",
-      "company": "@Spark-Relics",
-      "location": "China",
-      "blog": "https://gitee.com/adnaan",
-      "followers": 19,
-      "following": 22,
-      "publicRepos": 21,
-      "joinedAt": "2024-03-19T06:17:36Z",
-      "role": "Founder"
-    },
     {
       "login": "027xiguapi",
       "name": "西瓜皮",
@@ -28,24 +13,39 @@
       "company": "",
       "location": "武汉",
       "blog": "",
-      "followers": 88,
+      "followers": 89,
       "following": 0,
-      "publicRepos": 54,
+      "publicRepos": 55,
       "joinedAt": "2017-08-22T00:56:32Z",
       "role": "Member"
     },
     {
+      "login": "ad-naan",
+      "name": "adnaan",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/163977012?v=4",
+      "profileUrl": "https://github.com/ad-naan",
+      "bio": "just for fun · just for function · all are function",
+      "company": "@Spark-Relics",
+      "location": "China",
+      "blog": "https://gitee.com/adnaan",
+      "followers": 22,
+      "following": 25,
+      "publicRepos": 26,
+      "joinedAt": "2024-03-19T06:17:36Z",
+      "role": "Founder"
+    },
+    {
       "login": "kerwin2046",
-      "name": "玄野",
+      "name": "Ever Simon",
       "avatarUrl": "https://avatars.githubusercontent.com/u/83115098?v=4",
       "profileUrl": "https://github.com/kerwin2046",
-      "bio": "Just here for the vibes, man. Using Pop!_OS because I like my OS like my coffee: open and customizable. Stay hungry, stay curious.",
+      "bio": "Full-Stack Engineer · Building with AI & Agents · Open to Remote\r\n",
       "company": "Baidu",
       "location": "Vibing...",
       "blog": "kerwin2046.github.io",
-      "followers": 27,
-      "following": 77,
-      "publicRepos": 125,
+      "followers": 25,
+      "following": 83,
+      "publicRepos": 133,
       "joinedAt": "2021-04-24T08:50:04Z",
       "role": "Member"
     },
@@ -73,7 +73,7 @@
       "company": "",
       "location": "",
       "blog": "",
-      "followers": 4,
+      "followers": 5,
       "following": 4,
       "publicRepos": 136,
       "joinedAt": "2020-12-18T02:53:47Z",
@@ -115,10 +115,10 @@
         "cc-switch",
         "claude-code-cli"
       ],
-      "stars": 21,
+      "stars": 22,
       "forks": 7,
       "openIssues": 1,
-      "updatedAt": "2026-08-04T10:27:40Z",
+      "updatedAt": "2026-10-13T12:41:20Z",
       "image": "/assets/spark/generated/project-agent-v3.jpg"
     },
     {
@@ -234,7 +234,7 @@
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-10-12T15:19:05Z",
+      "updatedAt": "2026-10-13T13:20:21Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -310,11 +310,11 @@
     }
   ],
   "stats": {
-    "creators": 6,
+    "creators": 5,
     "projects": 12,
     "openSourceProjects": 12,
     "privateProjects": 0,
-    "stars": 367,
+    "stars": 368,
     "contributors": 12,
     "locations": 3
   }
