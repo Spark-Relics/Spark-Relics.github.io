@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T21:20:15.309Z",
+  "generatedAt": "2026-10-16T04:28:39.614Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -97,16 +97,16 @@
       ],
       "stars": 305,
       "forks": 51,
-      "openIssues": 3,
+      "openIssues": 4,
       "updatedAt": "2026-10-14T13:52:52Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
       "owner": "ad-naan",
-      "name": "nexus-account-manager",
-      "fullName": "ad-naan/nexus-account-manager",
+      "name": "LutraCredentials",
+      "fullName": "ad-naan/LutraCredentials",
       "description": "A unified multi platform AI account management tool built on Tauri, React, and Rust.",
-      "url": "https://github.com/ad-naan/nexus-account-manager",
+      "url": "https://github.com/ad-naan/LutraCredentials",
       "homepage": null,
       "private": false,
       "language": "TypeScript",
@@ -118,8 +118,8 @@
       "stars": 22,
       "forks": 7,
       "openIssues": 1,
-      "updatedAt": "2026-10-13T12:41:20Z",
-      "image": "/assets/spark/generated/project-agent-v3.jpg"
+      "updatedAt": "2026-10-16T04:25:46Z",
+      "image": "/assets/spark/generated/project-forge-v3.jpg"
     },
     {
       "owner": "ad-naan",
@@ -234,7 +234,7 @@
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-10-15T16:58:18Z",
+      "updatedAt": "2026-10-15T21:20:23Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
