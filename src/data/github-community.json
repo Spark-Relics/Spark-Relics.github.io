@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T22:19:41.755Z",
+  "generatedAt": "2026-10-20T04:46:27.822Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -45,7 +45,7 @@
       "blog": "kerwin2046.github.io",
       "followers": 25,
       "following": 83,
-      "publicRepos": 134,
+      "publicRepos": 135,
       "joinedAt": "2021-04-24T08:50:04Z",
       "role": "Member"
     },
@@ -165,7 +165,7 @@
       "owner": "ad-naan",
       "name": "adnify-website",
       "fullName": "ad-naan/adnify-website",
-      "description": "adnify官网——100%由adnify打造",
+      "description": "Adnify agent官网——由Adnify实现",
       "url": "https://github.com/ad-naan/adnify-website",
       "homepage": "https://adnify.vercel.app",
       "private": false,
@@ -178,7 +178,7 @@
       "stars": 6,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-10-14T08:14:45Z",
+      "updatedAt": "2026-10-20T03:17:53Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -234,7 +234,7 @@
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-10-19T13:08:47Z",
+      "updatedAt": "2026-10-19T22:19:48Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
