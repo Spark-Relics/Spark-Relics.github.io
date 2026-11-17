@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T12:56:44.509Z",
+  "generatedAt": "2026-11-17T20:52:17.918Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -13,7 +13,7 @@
       "company": "",
       "location": "武汉",
       "blog": "",
-      "followers": 89,
+      "followers": 88,
       "following": 0,
       "publicRepos": 55,
       "joinedAt": "2017-08-22T00:56:32Z",
@@ -28,8 +28,8 @@
       "company": "@Spark-Relics",
       "location": "China",
       "blog": "https://gitee.com/adnaan",
-      "followers": 25,
-      "following": 28,
+      "followers": 28,
+      "following": 29,
       "publicRepos": 27,
       "joinedAt": "2024-03-19T06:17:36Z",
       "role": "Founder"
@@ -44,8 +44,8 @@
       "location": "Vibing...",
       "blog": "kerwin2046.github.io",
       "followers": 27,
-      "following": 85,
-      "publicRepos": 139,
+      "following": 88,
+      "publicRepos": 144,
       "joinedAt": "2021-04-24T08:50:04Z",
       "role": "Member"
     },
@@ -60,7 +60,7 @@
       "blog": "",
       "followers": 1,
       "following": 4,
-      "publicRepos": 8,
+      "publicRepos": 9,
       "joinedAt": "2022-01-22T10:08:53Z",
       "role": "Member"
     },
@@ -77,6 +77,21 @@
       "following": 4,
       "publicRepos": 136,
       "joinedAt": "2020-12-18T02:53:47Z",
+      "role": "Member"
+    },
+    {
+      "login": "yoidu",
+      "name": "Yoi-du",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/353965664?v=4",
+      "profileUrl": "https://github.com/yoidu",
+      "bio": "No more nostalgia for what has been lost",
+      "company": "",
+      "location": "",
+      "blog": "",
+      "followers": 2,
+      "following": 5,
+      "publicRepos": 1,
+      "joinedAt": "2026-11-08T05:17:36Z",
       "role": "Member"
     }
   ],
@@ -95,10 +110,10 @@
         "claude-code",
         "codex"
       ],
-      "stars": 307,
+      "stars": 308,
       "forks": 50,
       "openIssues": 4,
-      "updatedAt": "2026-11-07T11:04:07Z",
+      "updatedAt": "2026-11-17T15:44:47Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -118,7 +133,7 @@
       "stars": 22,
       "forks": 7,
       "openIssues": 0,
-      "updatedAt": "2026-10-19T02:40:57Z",
+      "updatedAt": "2026-11-17T15:44:52Z",
       "image": "/assets/spark/generated/project-forge-v3.jpg"
     },
     {
@@ -138,7 +153,7 @@
       "stars": 13,
       "forks": 1,
       "openIssues": 0,
-      "updatedAt": "2026-11-02T06:21:12Z",
+      "updatedAt": "2026-11-17T15:44:47Z",
       "image": "/assets/spark/generated/project-studio-v3.jpg"
     },
     {
@@ -156,9 +171,9 @@
         "claude-code"
       ],
       "stars": 11,
-      "forks": 4,
+      "forks": 5,
       "openIssues": 0,
-      "updatedAt": "2026-09-28T11:08:45Z",
+      "updatedAt": "2026-11-17T15:45:04Z",
       "image": "/assets/spark/generated/project-studio-v3.jpg"
     },
     {
@@ -178,7 +193,7 @@
       "stars": 6,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-10-20T03:17:53Z",
+      "updatedAt": "2026-11-17T15:44:47Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -198,7 +213,7 @@
       "stars": 5,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-09-09T02:42:51Z",
+      "updatedAt": "2026-11-17T15:45:22Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -215,27 +230,11 @@
         "browser-game",
         "indie-game"
       ],
-      "stars": 3,
+      "stars": 4,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-09-09T15:07:06Z",
+      "updatedAt": "2026-11-17T15:45:14Z",
       "image": "/assets/spark/generated/project-agent-v3.jpg"
-    },
-    {
-      "owner": "Spark-Relics",
-      "name": "Spark-Relics.github.io",
-      "fullName": "Spark-Relics/Spark-Relics.github.io",
-      "description": "Astro project maintained by Spark-Relics.",
-      "url": "https://github.com/Spark-Relics/Spark-Relics.github.io",
-      "homepage": "https://spark-relics.github.io/",
-      "private": false,
-      "language": "Astro",
-      "topics": [],
-      "stars": 2,
-      "forks": 0,
-      "openIssues": 0,
-      "updatedAt": "2026-11-07T05:55:17Z",
-      "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
       "owner": "Spark-Relics",
@@ -250,8 +249,60 @@
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-10-10T02:29:03Z",
+      "updatedAt": "2026-11-17T15:45:24Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
+    },
+    {
+      "owner": "Spark-Relics",
+      "name": "Spark-Relics.github.io",
+      "fullName": "Spark-Relics/Spark-Relics.github.io",
+      "description": "Astro project maintained by Spark-Relics.",
+      "url": "https://github.com/Spark-Relics/Spark-Relics.github.io",
+      "homepage": "https://spark-relics.github.io/",
+      "private": false,
+      "language": "Astro",
+      "topics": [],
+      "stars": 2,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-11-17T15:45:21Z",
+      "image": "/assets/spark/generated/project-memory-v3.jpg"
+    },
+    {
+      "owner": "Spark-Relics",
+      "name": "Cherenkov",
+      "fullName": "Spark-Relics/Cherenkov",
+      "description": "切伦科夫辐射：粒子超光速穿过介质时发出的幽蓝色光芒。在庞大的代码介质中，只让被 AI 触发变动的链路发出幽蓝荧光。",
+      "url": "https://github.com/Spark-Relics/Cherenkov",
+      "homepage": null,
+      "private": false,
+      "language": "TypeScript",
+      "topics": [
+        "masterthecode",
+        "mcp",
+        "mcp-server"
+      ],
+      "stars": 2,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-11-16T07:26:17Z",
+      "image": "/assets/spark/generated/project-agent-v3.jpg"
+    },
+    {
+      "owner": "Spark-Relics",
+      "name": "prism-chat",
+      "fullName": "Spark-Relics/prism-chat",
+      "description": "A channel-agnostic messaging hub SDK. Unify Telegram / WhatsApp / LINE / Email and more behind one message model.",
+      "url": "https://github.com/Spark-Relics/prism-chat",
+      "homepage": null,
+      "private": false,
+      "language": "TypeScript",
+      "topics": [],
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-11-17T15:45:24Z",
+      "image": "/assets/spark/generated/project-studio-v3.jpg"
     },
     {
       "owner": "Spark-Relics",
@@ -270,24 +321,8 @@
       "stars": 1,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-09-08T03:09:48Z",
+      "updatedAt": "2026-11-17T15:45:20Z",
       "image": "/assets/spark/generated/project-forge-v3.jpg"
-    },
-    {
-      "owner": "Spark-Relics",
-      "name": "prism-chat",
-      "fullName": "Spark-Relics/prism-chat",
-      "description": "A channel-agnostic messaging hub SDK. Unify Telegram / WhatsApp / LINE / Email and more behind one message model.",
-      "url": "https://github.com/Spark-Relics/prism-chat",
-      "homepage": null,
-      "private": false,
-      "language": "TypeScript",
-      "topics": [],
-      "stars": 1,
-      "forks": 0,
-      "openIssues": 0,
-      "updatedAt": "2026-09-08T03:09:31Z",
-      "image": "/assets/spark/generated/project-studio-v3.jpg"
     },
     {
       "owner": "Spark-Relics",
@@ -310,12 +345,12 @@
     }
   ],
   "stats": {
-    "creators": 5,
-    "projects": 12,
-    "openSourceProjects": 12,
+    "creators": 6,
+    "projects": 13,
+    "openSourceProjects": 13,
     "privateProjects": 0,
-    "stars": 373,
-    "contributors": 12,
+    "stars": 377,
+    "contributors": 13,
     "locations": 3
   }
 }
