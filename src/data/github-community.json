@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T07:23:10.105Z",
+  "generatedAt": "2026-11-18T20:28:07.040Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -43,9 +43,9 @@
       "company": "Baidu",
       "location": "Vibing...",
       "blog": "kerwin2046.github.io",
-      "followers": 27,
+      "followers": 26,
       "following": 88,
-      "publicRepos": 144,
+      "publicRepos": 146,
       "joinedAt": "2021-04-24T08:50:04Z",
       "role": "Member"
     },
@@ -222,7 +222,7 @@
       "fullName": "Spark-Relics/Moyu-Defense",
       "description": "🌵 A satirical 3D tower-defense game where office plants battle KPIs, clients, and bosses—protect your cubicle and survive until clock-out!",
       "url": "https://github.com/Spark-Relics/Moyu-Defense",
-      "homepage": null,
+      "homepage": "https://moyu-defense.vercel.app",
       "private": false,
       "language": "JavaScript",
       "topics": [
@@ -233,7 +233,7 @@
       "stars": 4,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-11-17T15:45:14Z",
+      "updatedAt": "2026-11-18T13:21:34Z",
       "image": "/assets/spark/generated/project-agent-v3.jpg"
     },
     {
