@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T20:31:21.497Z",
+  "generatedAt": "2026-11-20T07:10:06.385Z",
   "organization": "Spark-Relics",
   "personalRepoOwner": "ad-naan",
   "founderLogin": "ad-naan",
@@ -110,10 +110,10 @@
         "claude-code",
         "codex"
       ],
-      "stars": 308,
+      "stars": 307,
       "forks": 50,
       "openIssues": 4,
-      "updatedAt": "2026-11-17T15:44:47Z",
+      "updatedAt": "2026-11-19T20:36:25Z",
       "image": "/assets/spark/generated/project-memory-v3.jpg"
     },
     {
@@ -349,7 +349,7 @@
     "projects": 13,
     "openSourceProjects": 13,
     "privateProjects": 0,
-    "stars": 377,
+    "stars": 376,
     "contributors": 13,
     "locations": 3
   }
